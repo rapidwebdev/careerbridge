@@ -1,4 +1,3 @@
 .sass-cache/
 *.css.map
-
-wp-config.php
+/wp-config.php
