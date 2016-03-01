@@ -1,62 +1,396 @@
-/*
-Error: File to import not found or unreadable: job-page.
-       Load paths:
-         Compass::SpriteImporter
-         C:/xampp/htdocs/rapid/wp-content/themes/career/assets/scss
-         C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets
-        on line 4 of C:/xampp/htdocs/rapid/wp-content/themes/career/assets/scss/./custom.scss
+/******************************************************************
 
-1: @import "compass/CSS3";
-2: @import "mixins";
-3: @import "variables";
-4: @import "job-page";
-5: @import "fonts";
-6: 
-7: 
-8: body,html{
-9:   height: 100%;
+Stylesheet: Mixins & Constants Stylesheet
 
-Backtrace:
-C:/xampp/htdocs/rapid/wp-content/themes/career/assets/scss/./custom.scss:4
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/engine.rb:278:in `render'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.15/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+This is where you can take advantage of Sass' great features:
+Mixins & Constants.
+
+******************************************************************/
+/*********************
+TOOLS
+*********************/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic);
+/* line 15, ../scss/_mixins.scss */
+.image-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*********************
+COLORS
+*********************/
+/*********************
+TYPOGRAPHY
+*********************/
+/*	@font-face {
+    	font-family: 'Font Name';
+    	src: url('assets/fonts/font-name.eot');
+    	src: url('assets/fonts/font-name.eot?#iefix') format('embedded-opentype'),
+             url('assets/fonts/font-name.woff') format('woff'),
+             url('assets/fonts/font-name.ttf') format('truetype'),
+             url('assets/fonts/font-name.svg#font-name') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+	}
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: job-page.\A        Load paths:\A          Compass::SpriteImporter\A          C:/xampp/htdocs/rapid/wp-content/themes/career/assets/scss\A          C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets\A         on line 4 of C:/xampp/htdocs/rapid/wp-content/themes/career/assets/scss/./custom.scss\A \A 1: @import \"compass/CSS3\";\A 2: @import \"mixins\";\A 3: @import \"variables\";\A 4: @import \"job-page\";\A 5: @import \"fonts\";\A 6: \A 7: \A 8: body,html{\A 9:   height: 100%;"; }
+/* line 43, ../scss/_mixins.scss */
+span.amp {
+  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
+  font-style: italic;
+}
+
+/*********************
+CSS3 GRADIENTS.
+*********************/
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+@font-face {
+  font-family: 'careerbridge';
+  src: url("../fonts/careerbridge.eot?9epaar");
+  src: url("../fonts/careerbridge.eot?9epaar#iefix") format("embedded-opentype"), url("../fonts/careerbridge.ttf?9epaar") format("truetype"), url("../fonts/careerbridge.woff?9epaar") format("woff"), url("../fonts/careerbridge.svg?9epaar#careerbridge") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100px;
+}
+/* line 15, ../scss/_fonts.scss */
+[class^="cb-"], [class*=" cb-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'careerbridge' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 30, ../scss/_fonts.scss */
+.cb-design:before {
+  content: "\e900";
+  font-size: 208px;
+  color: #FFD166;
+}
+
+/* line 35, ../scss/_fonts.scss */
+.cb-dev:before {
+  content: "\e901";
+  font-size: 208px;
+  color: #06D6A0;
+}
+
+/* line 40, ../scss/_fonts.scss */
+.cb-ux:before {
+  content: "\e902";
+  font-size: 208px;
+  color: #EF476F;
+}
+
+/* line 8, ../scss/custom.scss */
+body, html {
+  height: 100%;
+  min-height: 100%;
+}
+
+/* line 13, ../scss/custom.scss */
+.header {
+  height: 100%;
+  min-height: 100%;
+}
+
+/* line 18, ../scss/custom.scss */
+section {
+  min-height: 100%;
+  position: relative;
+  background-color: #DADADA;
+}
+
+/* line 24, ../scss/custom.scss */
+.categories, .footer .footerCont, .tagline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 33, ../scss/custom.scss */
+.headImg {
+  background: transparent url(../images/bg.jpg) center center no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 130%;
+  width: 100%;
+}
+
+/* line 40, ../scss/custom.scss */
+.firefly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  z-index: 999999999;
+}
+
+/* line 50, ../scss/custom.scss */
+.categories {
+  height: 100%;
+  min-height: 100%;
+}
+/* line 53, ../scss/custom.scss */
+.categories .subSec {
+  height: 100%;
+  min-height: 100%;
+}
+/* line 59, ../scss/custom.scss */
+.categories .column .catWrap {
+  padding: 100px;
+}
+/* line 62, ../scss/custom.scss */
+.categories .column h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 68, ../scss/custom.scss */
+.categories .column:nth-of-type(1) img {
+  border: 4px solid #e6a100;
+  border-radius: 40px 0 40px 0;
+}
+/* line 78, ../scss/custom.scss */
+.categories .column:nth-of-type(2) img {
+  border: 4px solid #035a43;
+  border-radius: 40px 0 40px 0;
+}
+/* line 83, ../scss/custom.scss */
+.categories .column:nth-of-type(2) h2 {
+  color: #06D6A0;
+}
+/* line 88, ../scss/custom.scss */
+.categories .column:nth-of-type(3) img {
+  border: 4px solid #a80f33;
+  border-radius: 40px 0 40px 0;
+}
+
+/* line 100, ../scss/custom.scss */
+.mainNav {
+  height: 60px;
+  width: 100%;
+  background-color: #dadada;
+}
+
+/* line 107, ../scss/custom.scss */
+.resources img {
+  border: 5px solid #8E44AD;
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+/* line 112, ../scss/custom.scss */
+.resources h4 {
+  padding-top: 10px;
+  text-align: center;
+  color: #dadada;
+}
+/* line 117, ../scss/custom.scss */
+.resources .column {
+  padding-bottom: 20px;
+}
+
+/* line 123, ../scss/custom.scss */
+ul#menu-main-menu {
+  display: inline-block;
+  float: right;
+  padding-top: 10px;
+}
+/* line 128, ../scss/custom.scss */
+ul#menu-main-menu li a {
+  color: #8E44AD;
+  font-size: 18px;
+  font-weight: 700;
+  -moz-transition: color, 0.4s;
+  -o-transition: color, 0.4s;
+  -webkit-transition: color, 0.4s;
+  transition: color, 0.4s;
+}
+/* line 133, ../scss/custom.scss */
+ul#menu-main-menu li a:hover {
+  color: #612e76;
+  -moz-transition: color, 0.4s;
+  -o-transition: color, 0.4s;
+  -webkit-transition: color, 0.4s;
+  transition: color, 0.4s;
+}
+
+/* line 142, ../scss/custom.scss */
+.footer {
+  margin-top: 0;
+  background-color: #444;
+  position: relative;
+}
+/* line 146, ../scss/custom.scss */
+.footer .copyright {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+}
+/* line 154, ../scss/custom.scss */
+.footer .footerCont h1 {
+  line-height: 0;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #dadada;
+}
+/* line 160, ../scss/custom.scss */
+.footer .footerCont input {
+  background-color: #dadada;
+  color: #8E44AD;
+}
+/* line 103, ../scss/_mixins.scss */
+.footer .footerCont input.placeholder {
+  color: #8E44AD;
+}
+/* line 104, ../scss/_mixins.scss */
+.footer .footerCont input:-moz-placeholder {
+  color: #8E44AD;
+}
+/* line 105, ../scss/_mixins.scss */
+.footer .footerCont input::-moz-placeholder {
+  color: #8E44AD;
+}
+/* line 106, ../scss/_mixins.scss */
+.footer .footerCont input:-ms-input-placeholder {
+  color: #8E44AD;
+}
+/* line 107, ../scss/_mixins.scss */
+.footer .footerCont input::-webkit-input-placeholder {
+  color: #8E44AD;
+}
+/* line 166, ../scss/custom.scss */
+.footer .footerCont input.buttonPur {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  line-height: 1;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 0.85em 1em;
+  margin: 0 0 1rem 0;
+  font-size: 18px;
+  background-color: #8E44AD;
+  color: #dadada;
+}
+/* line 181, ../scss/custom.scss */
+.footer .footerCont textarea {
+  background-color: #dadada;
+}
+/* line 103, ../scss/_mixins.scss */
+.footer .footerCont textarea.placeholder {
+  color: #8E44AD;
+}
+/* line 104, ../scss/_mixins.scss */
+.footer .footerCont textarea:-moz-placeholder {
+  color: #8E44AD;
+}
+/* line 105, ../scss/_mixins.scss */
+.footer .footerCont textarea::-moz-placeholder {
+  color: #8E44AD;
+}
+/* line 106, ../scss/_mixins.scss */
+.footer .footerCont textarea:-ms-input-placeholder {
+  color: #8E44AD;
+}
+/* line 107, ../scss/_mixins.scss */
+.footer .footerCont textarea::-webkit-input-placeholder {
+  color: #8E44AD;
+}
+
+/* line 190, ../scss/custom.scss */
+.copyright {
+  color: #dadada;
+}
+
+/* line 194, ../scss/custom.scss */
+.title {
+  display: inline-block;
+  float: left;
+  color: #8E44AD;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+/* line 204, ../scss/custom.scss */
+.tagline {
+  max-width: 1200px;
+  color: #dadada;
+  font-size: 75px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 215, ../scss/custom.scss */
+.menu-item {
+  display: inline-block;
+  overflow: hidden;
+}
+/* line 218, ../scss/custom.scss */
+.menu-item:before, .menu-item:after {
+  right: 0;
+  bottom: 0;
+  background: #0883a4;
+}
+/* line 223, ../scss/custom.scss */
+.menu-item:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(-100%);
+}
+/* line 228, ../scss/custom.scss */
+.menu-item:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(100%);
+}
+/* line 233, ../scss/custom.scss */
+.menu-item > a {
+  display: block;
+  padding: 10px;
+}
+/* line 236, ../scss/custom.scss */
+.menu-item > a:before, .menu-item > a:after {
+  left: 0;
+  top: 0;
+  background: #0883a4;
+}
+/* line 241, ../scss/custom.scss */
+.menu-item > a:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(100%);
+}
+/* line 246, ../scss/custom.scss */
+.menu-item > a:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(-100%);
+}
+/* line 252, ../scss/custom.scss */
+.menu-item:hover:before, .menu-item:hover:after, .menu-item:hover > span:before, .menu-item:hover > span:after {
+  transform: translate(0, 0);
+}
