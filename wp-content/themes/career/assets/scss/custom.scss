@@ -63,7 +63,7 @@ section{
        // @include box-shadow(0 0 15px rgba(darken($blu, 25%), 1));
       }
       h2{
-        color: $blu;
+        // color: $blu;
       }
     }
     &:nth-of-type(2){   
@@ -83,7 +83,7 @@ section{
         // @include box-shadow(0 0 15px rgba(darken($pnk, 25%), 1));
       }
       h2{
-        color: $pnk;
+        // color: $pnk;
       }
     }
   }
