@@ -13,7 +13,7 @@ Template Name: Home page
 	      <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<div class="column">
 						<div class="catWrap">
-							<img src="<?php the_field('cat_img'); ?>">
+							<span class="<?php the_field('cat_class');?>"></span>
 							<h2><?php the_title(); ?></h2>
 							<!-- <div><?php the_field('cat_desc'); ?></div> -->
 						</div>
