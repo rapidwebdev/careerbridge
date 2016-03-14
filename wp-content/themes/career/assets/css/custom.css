@@ -44,6 +44,11 @@ span.amp {
 CSS3 GRADIENTS.
 *********************/
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
+/************************************************
+
+Stylesheet: Job Pages
+
+*************************************************/
 @font-face {
   font-family: 'careerbridge';
   src: url("../fonts/careerbridge.eot?9epaar");

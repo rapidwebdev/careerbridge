@@ -5,13 +5,23 @@
 ?>
 
 
-<?php get_header(); ?>
+<?php get_header(2); ?>
 			
 <div id="content">
 
 	<div id="inner-content" class="row">
 
 		<main id="main" class="large-8 medium-8 columns" role="main">
+
+		<?php
+			$catIDs = get_cat_ID( $cat_name='Ux/Ui_Design' );
+			$catIDs .= ',-' . get_cat_ID( $cat_name='HowTo' );
+			$catIDs .= ',-' . get_cat_ID( $cat_name='Advice' );
+			$catIDs .= ',-' . get_cat_ID( $cat_name='Skills' );
+			query_posts("cat=$catIDs&showposts=6");
+		?>
+
+		<?php query_posts(array('category__and'=>array(1,2),'showposts'=>2,'orderby'=>title,'order'=>DESC)); ?>
 		
 		    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
@@ -24,8 +34,6 @@
 		    <?php endif; ?>
 
 		</main> <!-- end #main -->
-
-		<?php get_sidebar(); ?>
 
 	</div> <!-- end #inner-content -->
 
