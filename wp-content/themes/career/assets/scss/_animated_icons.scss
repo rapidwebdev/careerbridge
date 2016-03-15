@@ -1,0 +1,106 @@
+.menuBtn {
+    display: block;
+    float: left;
+    transition: all 275ms ease;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.menuBtn span {
+    display: block;
+    width: 40px;
+    height: 7px;
+    background: #0088ce;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    transition: all 275ms ease;
+}
+
+.menuBtn.active {
+    padding-top: 15px;
+    padding-right: 20px;
+    transform: rotate(-45deg);
+
+    .bar1 {
+      transform: rotate(0deg) translateY(6px);
+    }
+
+    .bar2 {
+      opacity: 0;
+    }
+
+    .bar3 {
+      transform: rotate(-90deg) translateX(15px);
+    }
+}
+
+.mag-glass {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  float: right;
+  right: 15px;
+}
+
+.mag-glass:hover {
+  cursor: pointer;
+}
+
+.mag-glass::before,
+.mag-glass::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 3px;
+  background: #fff;
+  -webkit-transition: all 0.15s cubic-bezier(1,0,0,1);
+  -moz-transition: all 0.15s cubic-bezier(1,0,0,1);
+  transition: all 0.15s cubic-bezier(1,0,0,1);
+}
+
+.mag-glass::before {
+  width: 16px;
+  height: 3px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 18px;
+  left: 12px;
+  opacity: 0;
+}
+
+.mag-glass.active::before {
+  top: 6px;
+  left: 0;
+  opacity: 0.5;
+}
+
+.mag-glass::after {
+  width: 20px;
+  height: 6px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 19px;
+  left: 11px;
+}
+
+.mag-glass.active::after {
+  width: 16px;
+  height: 3px;
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  top: 6px;
+  left: 0;
+  opacity:0.5;
+}
+
+.mag-glass.active:hover::before,
+.mag-glass.active:hover::after{
+  opacity:1;
+}

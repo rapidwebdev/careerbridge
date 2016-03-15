@@ -36,8 +36,8 @@
 	
 	<!-- Uncomment this line if using the Off-Canvas Menu --> 
 		
-	<body <?php body_class(); ?>>
-		<!-- Search Form -->
+	<body <?php body_class('uxDes'); ?>>
+	` <!-- Search Form -->
 		<div class="searchForm large-3 medium-6 small-12 columns">
 			<?php get_search_form(); ?>
 		</div>
@@ -81,14 +81,12 @@
  				<div class="medium-11 columns"><?php joints_top_nav(); ?></div>
  				<div class="medium-1 columns search"><span class="mag-glass"></span></div>
  			</div>
-		</div>	
-		
-		<header class="header dzsparallaxer auto-init use-loading" data-options='{ direction: "reverse" }'  role="banner">
-			<div class="tagline">
-	 			<p>A brief guide to finding work in the Portland web industry</p>
-	 		</div>
-		 	<div class="headImg dzsparallaxer--target">
-		 		<div id="firefly" class="firefly"></div>
-		 	</div>
+		</div>
+
+		<header class="webDesHeader dzsparallaxer auto-init use-loading" data-options='{ direction: "reverse", mode_scroll: "fromtop" }'  role="banner">
+		<div class="tagline">
+		 			<p>UI/UX Design</p>
+		 		</div>
+		 	<div class="webDesHeadImg dzsparallaxer--target"></div>
       <div class="headinfo row"></div>
 		</header>
