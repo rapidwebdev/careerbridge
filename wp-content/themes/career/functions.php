@@ -38,3 +38,8 @@ require_once(get_template_directory().'/assets/translation/translation.php');
 
 // Customize the WordPress admin
 // require_once(get_template_directory().'/assets/functions/admin.php'); 
+
+add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+function wpdocs_theme_setup() {
+   add_image_size( 'article-image', 500, 275, true );
+}

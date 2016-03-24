@@ -32,45 +32,69 @@ Template Name: Web Wesign
 		<section id="howTo" class="howTo">
 			<div class="secContent">
 				<h1 class="text-center"><span class="cb-howTo"></span>How To</h1>
-				<?php $loop = new WP_Query( array( 'order' => 'asc', 'category_name' => 'des-howto') ); ?>
-        <?php if ( have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<div class="small-12 medium-4 columns">
-						<h4 class="text-center"><?php the_title(); ?></h4>
-						<?php the_post_thumbnail('large'); ?>
-						<p><?php the_excerpt(); ?></p>
-					</div>
-				<?php endwhile; // end of the loop. ?>
-				<?php endif; ?>
+				<div class="secMainContent">
+					<?php $loop = new WP_Query( array( 'order' => 'asc', 'category_name' => 'des-howto', 'posts_per_page' => 3) ); ?>
+	        <?php if ( have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+						<a href="<?php the_permalink(); ?>">
+						<div class="small-12 medium-4 columns article">
+							<div class="articleImg" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');">
+							<div class="imgOverlay">
+								<h4 class="text-center articleHead"><?php the_title(); ?></h4>
+							</div>
+							</div>
+							<div class="excerpt"><?php echo get_the_excerpt(); ?></div>
+						</div>
+					</a>
+					<?php endwhile; // end of the loop. ?>
+					<?php endif; ?>
+				</div>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>/design-how-to" class="viewAllBtn">View all Articles</a>
 			</div>
 		</section>
 		
 		<section id="advice" class="advice">
 			<div class="secContent">
 			<h1 class="text-center"><span class="cb-advice"></span>Advice</h1>
-				<?php $loop = new WP_Query( array( 'order' => 'asc', 'category_name' => 'des-advice') ); ?>
+			<div class="secMainContent">
+				<?php $loop = new WP_Query( array( 'order' => 'asc', 'category_name' => 'des-advice', 'posts_per_page' => 3) ); ?>
         <?php if ( have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<div class="small-12 medium-4 columns">
-						<h4 class="text-center"><?php the_title(); ?></h4>
-						<?php the_post_thumbnail('large'); ?>
-						<p><?php the_excerpt(); ?></p>
-					</div>
+					<a href="<?php the_permalink(); ?>">
+						<div class="small-12 medium-4 columns article">
+							<div class="articleImg" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');">
+							<div class="imgOverlay">
+								<h4 class="text-center articleHead"><?php the_title(); ?></h4>
+							</div>
+							</div>
+							<div class="excerpt"><?php echo get_the_excerpt(); ?></div>
+						</div>
+					</a>
 				<?php endwhile; // end of the loop. ?>
 				<?php endif; ?>
+				</div>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>/design-advice" class="viewAllBtn">View all Articles</a>
 			</div>
 		</section>
 		
 		<section id="skills" class="skills">
 			<div class="secContent">
 				<h1 class="text-center"><span class="cb-skills"></span>Skills</h1>
-				<?php $loop = new WP_Query( array( 'order' => 'asc', 'category_name' => 'des-skills') ); ?>
+				<div class="secMainContent">
+				<?php $loop = new WP_Query( array( 'order' => 'asc', 'category_name' => 'des-skill', 'posts_per_page' => 3) ); ?>
         <?php if ( have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<div class="small-12 medium-4 columns">
-						<h4 class="text-center"><?php the_title(); ?></h4>
-						<?php the_post_thumbnail('large'); ?>
-						<p><?php the_excerpt(); ?></p>
-					</div>
+        	<a href="<?php the_permalink(); ?>">
+						<div class="small-12 medium-4 columns article">
+							<div class="articleImg" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');">
+							<div class="imgOverlay">
+								<h4 class="text-center articleHead"><?php the_title(); ?></h4>
+							</div>
+							</div>
+							<div class="excerpt"><?php echo get_the_excerpt(); ?></div>
+						</div>
+					</a>
 				<?php endwhile; // end of the loop. ?>
 				<?php endif; ?>
+				</div>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>/design-skills" class="viewAllBtn">View all Articles</a>
 			</div>
 		</section>
 

@@ -1,5 +1,4 @@
-					<section class="footer" role="contentinfo">
-						<div id="inner-footer" class="row">
+					<section class="footer sub" role="contentinfo">
 							<div class="large-12 medium-12 columns footerCont">
 								<div class="large-8 medium-6 small-12 columns">
 									<div class="small-up-2 large-up-4 columns resources">
@@ -14,7 +13,6 @@
 											</div>
 										<?php endwhile; ?>
 										<?php endif; ?>
-										<?php wp_reset_query(); ?>
 									</div>
 								</div>
 								<div class="large-4 medium-6 small-12 columns">
@@ -26,7 +24,6 @@
 							<div class="large-12 columns copyright">
 								<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
 							</div>
-						</div> <!-- end #inner-footer -->
 					</section> <!-- end .footer -->
 		<?php wp_footer(); ?>
 	</body>

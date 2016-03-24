@@ -36,7 +36,7 @@
 	
 	<!-- Uncomment this line if using the Off-Canvas Menu --> 
 		
-	<body <?php body_class('webDev'); ?>>
+	<body <?php body_class('singPost'); ?>>
 	` <!-- Search Form -->
 		<div class="searchForm large-3 medium-6 small-12 columns">
 			<?php get_search_form(); ?>
@@ -59,7 +59,7 @@
 			  </div>
 			</div>
 				<div class="title small-8 columns no-pad text-center">
-		 			<a href="<?php get_site_url();?>">
+		 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 		 					<div class="medium-12 site-title"><?php bloginfo('name'); ?></div>
 		 			</a>
 	 			</div>
@@ -83,11 +83,11 @@
  			</div>
 		</div>
 
-		<header class="webDesHeader dzsparallaxer auto-init use-loading" data-options='{ direction: "reverse", mode_scroll: "fromtop" }'  role="banner">
+		<header class="singPostHeader dzsparallaxer auto-init use-loading" data-options='{ direction: "reverse", mode_scroll: "fromtop" }'  role="banner">
 		<div class="tagline">
-		 			<p>Web Development</p>
+		 			<p><?php the_title(); ?></p>
 		 		</div>
-		 	<div class="webDevHeadImg dzsparallaxer--target">
+		 	<div class="singPostHeadImg dzsparallaxer--target" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');">
 		 		<div id="firefly" class="firefly"></div>
 		 		<div class="overlay"></div>
 		 	</div>

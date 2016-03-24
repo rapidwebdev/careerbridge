@@ -343,7 +343,7 @@ body, html {
 
 /* line 51, ../scss/custom.scss */
 .headImg {
-  background: transparent url(../images/bg.jpg) center center no-repeat;
+  background: transparent url(../images/bg.jpg) right center no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -369,7 +369,45 @@ body, html {
   width: 100%;
 }
 
-/* line 72, ../scss/custom.scss */
+/* line 71, ../scss/custom.scss */
+.webDevHeadImg {
+  background: transparent url(../images/webDev_head.jpg) center center no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+/* line 78, ../scss/custom.scss */
+.uxDesHeadImg {
+  background: transparent url(../images/uxDes_head.jpg) center center no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+/* line 85, ../scss/custom.scss */
+.singPostHeader {
+  height: 500px;
+  width: 100%;
+}
+
+/* line 90, ../scss/custom.scss */
+.singPostHeadImg {
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+/* line 96, ../scss/custom.scss */
 section {
   height: auto;
   min-height: auto;
@@ -377,7 +415,69 @@ section {
   background-color: #DADADA;
 }
 
-/* line 79, ../scss/custom.scss */
+/* line 103, ../scss/custom.scss */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 112, ../scss/custom.scss */
+.excerpt {
+  margin-top: 20px;
+}
+
+/* line 116, ../scss/custom.scss */
+.postContent {
+  font-size: 16px;
+}
+
+/* line 120, ../scss/custom.scss */
+.mag-glass {
+  border: 4px solid #8E44AD;
+}
+/* line 122, ../scss/custom.scss */
+.mag-glass:before, .mag-glass:after {
+  background: #8E44AD;
+}
+
+/* line 127, ../scss/custom.scss */
+.articleImg {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+/* line 134, ../scss/custom.scss */
+.imgOverlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 141, ../scss/custom.scss */
+.imgOverlay h4 {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+
+/* line 153, ../scss/custom.scss */
 .secContent {
   position: relative;
   top: 0;
@@ -391,10 +491,14 @@ section {
   transform: translateY(0);
   width: 85%;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
+}
+/* line 164, ../scss/custom.scss */
+.secContent .secMainContent {
+  overflow: hidden;
 }
 
-/* line 92, ../scss/custom.scss */
+/* line 169, ../scss/custom.scss */
 .mainNav {
   height: 60px;
   width: 100%;
@@ -409,12 +513,12 @@ section {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-/* line 103, ../scss/custom.scss */
+/* line 180, ../scss/custom.scss */
 .mainNav a {
   color: #8E44AD;
 }
 
-/* line 108, ../scss/custom.scss */
+/* line 187, ../scss/custom.scss */
 .offCanvas {
   height: 60px;
   width: 100%;
@@ -426,7 +530,7 @@ section {
   z-index: 9999999999999;
   display: block;
 }
-/* line 118, ../scss/custom.scss */
+/* line 197, ../scss/custom.scss */
 .offCanvas .title {
   display: inline-block;
   float: left;
@@ -434,7 +538,7 @@ section {
   font-size: 20px;
   font-weight: 700;
 }
-/* line 125, ../scss/custom.scss */
+/* line 204, ../scss/custom.scss */
 .offCanvas .mainNav {
   height: 60px;
   width: 100%;
@@ -448,42 +552,47 @@ section {
   display: block;
 }
 
-/* line 141, ../scss/custom.scss */
+/* line 220, ../scss/custom.scss */
 h1 span.cb-howTo, h1 span.cb-advice, h1 span.cb-skills {
   margin-right: 30px;
 }
 
-/* line 147, ../scss/custom.scss */
+/* line 226, ../scss/custom.scss */
+.columns:last-child:not(:first-child) {
+  float: left;
+}
+
+/* line 230, ../scss/custom.scss */
 .footer, .webDes .footer, .webDev .footer, .uxDes .footer {
   margin-top: 0;
   background-color: #444;
   position: relative;
 }
-/* line 151, ../scss/custom.scss */
+/* line 239, ../scss/custom.scss */
 .footer .copyright {
   position: absolute;
   left: 0;
   bottom: 15px;
   width: 100%;
 }
-/* line 158, ../scss/custom.scss */
+/* line 246, ../scss/custom.scss */
 .footer .resources img {
   border: 5px solid #8E44AD;
   -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-/* line 163, ../scss/custom.scss */
+/* line 251, ../scss/custom.scss */
 .footer .resources h4 {
   padding-top: 10px;
   text-align: center;
   color: #dadada;
 }
-/* line 168, ../scss/custom.scss */
+/* line 256, ../scss/custom.scss */
 .footer .resources .column {
   padding-bottom: 20px;
 }
-/* line 172, ../scss/custom.scss */
+/* line 260, ../scss/custom.scss */
 .footer .footerCont {
   position: relative;
   left: 0;
@@ -496,14 +605,14 @@ h1 span.cb-howTo, h1 span.cb-advice, h1 span.cb-skills {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-/* line 180, ../scss/custom.scss */
+/* line 268, ../scss/custom.scss */
 .footer .footerCont h1 {
   line-height: 0;
   padding-bottom: 50px;
   text-align: center;
   color: #dadada;
 }
-/* line 186, ../scss/custom.scss */
+/* line 274, ../scss/custom.scss */
 .footer .footerCont input {
   background-color: #dadada;
   color: #8E44AD;
@@ -528,7 +637,7 @@ h1 span.cb-howTo, h1 span.cb-advice, h1 span.cb-skills {
 .footer .footerCont input::-webkit-input-placeholder {
   color: #8E44AD;
 }
-/* line 192, ../scss/custom.scss */
+/* line 280, ../scss/custom.scss */
 .footer .footerCont input.buttonCont {
   display: inline-block;
   text-align: center;
@@ -543,7 +652,7 @@ h1 span.cb-howTo, h1 span.cb-advice, h1 span.cb-skills {
   background-color: #8E44AD;
   color: #dadada;
 }
-/* line 207, ../scss/custom.scss */
+/* line 295, ../scss/custom.scss */
 .footer .footerCont textarea {
   background-color: #dadada;
 }
@@ -568,8 +677,123 @@ h1 span.cb-howTo, h1 span.cb-advice, h1 span.cb-skills {
   color: #8E44AD;
 }
 
-/* line 216, ../scss/custom.scss */
-.tagline, .categories {
+/* line 304, ../scss/custom.scss */
+.prevBtn {
+  position: relative;
+  padding-left: 30px;
+  display: inline-block;
+  float: left;
+  font-size: 22px;
+}
+/* line 310, ../scss/custom.scss */
+.prevBtn:before {
+  content: '';
+  background: url(../images/back.svg) center center no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+/* line 321, ../scss/custom.scss */
+.nextBtn {
+  position: relative;
+  padding-right: 30px;
+  display: inline-block;
+  float: right;
+  font-size: 22px;
+}
+/* line 327, ../scss/custom.scss */
+.nextBtn:after {
+  content: '';
+  background: url(../images/next.svg) center center no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+/* line 339, ../scss/custom.scss */
+blockquote {
+  display: block;
+  background: #dadada;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: justify;
+  /*Borders - (Optional)*/
+  border-left: 15px solid #8E44AD;
+  border-right: 2px solid #8E44AD;
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+/* line 360, ../scss/custom.scss */
+blockquote p {
+  color: #333;
+}
+/* line 363, ../scss/custom.scss */
+blockquote::before {
+  content: "\201C";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+/* line 377, ../scss/custom.scss */
+blockquote::after {
+  /*Reset to make sure*/
+  content: "";
+}
+
+/* line 383, ../scss/custom.scss */
+blockquote
+blockquote::after {
+  /*Reset to make sure*/
+  content: "";
+}
+
+/* line 390, ../scss/custom.scss */
+blockquote a {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #8E44AD;
+}
+
+/* line 397, ../scss/custom.scss */
+blockquote a:hover {
+  color: #666;
+}
+
+/* line 401, ../scss/custom.scss */
+blockquote em {
+  font-style: italic;
+}
+
+/* line 405, ../scss/custom.scss */
+.tagline {
   position: absolute;
   left: 0;
   right: 0;
@@ -581,25 +805,30 @@ h1 span.cb-howTo, h1 span.cb-advice, h1 span.cb-skills {
   transform: translateY(-50%);
 }
 
-/* line 225, ../scss/custom.scss */
+/* line 414, ../scss/custom.scss */
 .tagline {
   max-width: 1200px;
   color: #dadada;
-  font-size: 75px;
+  font-size: 35px;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-style: italic;
   font-weight: bold;
+  padding: 0 15px;
   z-index: 999;
 }
+/* line 425, ../scss/custom.scss */
+.tagline p {
+  line-height: 1.2em;
+}
 
-/* line 239, ../scss/custom.scss */
+/* line 432, ../scss/custom.scss */
 ul#menu-main-menu-1 {
   display: inline-block;
   float: right;
   padding-top: 0;
 }
-/* line 244, ../scss/custom.scss */
+/* line 437, ../scss/custom.scss */
 ul#menu-main-menu-1 li a {
   color: #8E44AD;
   font-size: 18px;
@@ -609,7 +838,7 @@ ul#menu-main-menu-1 li a {
   -webkit-transition: color, 1s;
   transition: color, 1s;
 }
-/* line 249, ../scss/custom.scss */
+/* line 442, ../scss/custom.scss */
 ul#menu-main-menu-1 li a:hover {
   color: #612e76;
   -moz-transition: color, 1s;
@@ -618,7 +847,7 @@ ul#menu-main-menu-1 li a:hover {
   transition: color, 1s;
 }
 
-/* line 259, ../scss/custom.scss */
+/* line 452, ../scss/custom.scss */
 .offCanvas {
   height: 60px;
   width: 100%;
@@ -633,25 +862,25 @@ ul#menu-main-menu-1 li a:hover {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-/* line 270, ../scss/custom.scss */
+/* line 463, ../scss/custom.scss */
 .offCanvas .title {
   display: inline-block;
   float: none;
-  color: #793a93;
+  color: #6b3382;
   font-size: 20px;
   font-weight: 700;
   margin: 0 auto;
 }
-/* line 277, ../scss/custom.scss */
+/* line 470, ../scss/custom.scss */
 .offCanvas .title a {
-  color: #793a93;
+  color: #6b3382;
 }
-/* line 281, ../scss/custom.scss */
+/* line 474, ../scss/custom.scss */
 .offCanvas .menuBtn span {
-  background: #793a93;
+  background: #6b3382;
 }
 
-/* line 285, ../scss/custom.scss */
+/* line 478, ../scss/custom.scss */
 .offCanvasMenu {
   width: 300px;
   min-height: 100%;
@@ -666,22 +895,22 @@ ul#menu-main-menu-1 li a:hover {
   -webkit-transition: all, 0.4s;
   transition: all, 0.4s;
 }
-/* line 295, ../scss/custom.scss */
+/* line 488, ../scss/custom.scss */
 .offCanvasMenu .offTitle {
   padding: 15px 0;
 }
-/* line 297, ../scss/custom.scss */
+/* line 490, ../scss/custom.scss */
 .offCanvasMenu .offTitle .site-title {
   padding-top: 12px;
-  color: #793a93;
+  color: #6b3382;
   font-size: 28px;
   font-weight: 700;
 }
-/* line 304, ../scss/custom.scss */
+/* line 497, ../scss/custom.scss */
 .offCanvasMenu .cb-logo:before {
   font-size: 60px;
 }
-/* line 307, ../scss/custom.scss */
+/* line 500, ../scss/custom.scss */
 .offCanvasMenu.open {
   left: 0;
   -moz-transition: all, 0.4s;
@@ -689,22 +918,22 @@ ul#menu-main-menu-1 li a:hover {
   -webkit-transition: all, 0.4s;
   transition: all, 0.4s;
 }
-/* line 311, ../scss/custom.scss */
+/* line 504, ../scss/custom.scss */
 .offCanvasMenu #menu-main-menu {
   width: 100%;
 }
-/* line 313, ../scss/custom.scss */
+/* line 506, ../scss/custom.scss */
 .offCanvasMenu #menu-main-menu li {
   width: 100%;
   display: block;
 }
-/* line 316, ../scss/custom.scss */
+/* line 509, ../scss/custom.scss */
 .offCanvasMenu #menu-main-menu li a {
-  color: #793a93;
+  color: #6b3382;
   font-size: 18px;
   font-weight: 700;
 }
-/* line 320, ../scss/custom.scss */
+/* line 513, ../scss/custom.scss */
 .offCanvasMenu #menu-main-menu li a:hover {
   color: #8E44AD;
   -moz-transition: color, 1s;
@@ -713,22 +942,22 @@ ul#menu-main-menu-1 li a:hover {
   transition: color, 1s;
 }
 
-/* line 329, ../scss/custom.scss */
+/* line 522, ../scss/custom.scss */
 .mainNav {
   display: none;
 }
 
-/* line 333, ../scss/custom.scss */
+/* line 526, ../scss/custom.scss */
 .mainMenu {
   float: right;
 }
 
-/* line 337, ../scss/custom.scss */
+/* line 530, ../scss/custom.scss */
 .search {
   padding-top: 10px;
 }
 
-/* line 341, ../scss/custom.scss */
+/* line 534, ../scss/custom.scss */
 .searchForm {
   position: fixed;
   top: 68px;
@@ -739,7 +968,7 @@ ul#menu-main-menu-1 li a:hover {
   -webkit-transition: all, 1s;
   transition: all, 1s;
 }
-/* line 348, ../scss/custom.scss */
+/* line 541, ../scss/custom.scss */
 .searchForm.left {
   right: 5px;
   -moz-transition: all, 1s;
@@ -748,7 +977,7 @@ ul#menu-main-menu-1 li a:hover {
   transition: all, 1s;
 }
 
-/* line 354, ../scss/custom.scss */
+/* line 547, ../scss/custom.scss */
 .srchBtn {
   width: 40px;
   height: 39px;
@@ -760,7 +989,7 @@ ul#menu-main-menu-1 li a:hover {
   background-size: 75%;
 }
 
-/* line 362, ../scss/custom.scss */
+/* line 555, ../scss/custom.scss */
 .title {
   display: inline-block;
   float: left;
@@ -768,13 +997,13 @@ ul#menu-main-menu-1 li a:hover {
   font-size: 20px;
   font-weight: 700;
 }
-/* line 368, ../scss/custom.scss */
+/* line 561, ../scss/custom.scss */
 .title .site-title {
   display: inline-block;
   padding-top: 15px;
   padding-left: 0;
 }
-/* line 373, ../scss/custom.scss */
+/* line 566, ../scss/custom.scss */
 .title .cb-logo:before {
   content: "\e904";
   font-size: 50px;
@@ -805,6 +1034,26 @@ Web Design Page CSS
   color: #d9b257;
 }
 /* line 20, ../scss/_webDes_template.scss */
+.webDes h1 {
+  margin-bottom: 30px;
+}
+/* line 24, ../scss/_webDes_template.scss */
+.webDes .howTo {
+  height: auto;
+  background-color: #FFD166;
+  color: #806933;
+  overflow: hidden;
+  padding-top: 50px;
+}
+/* line 30, ../scss/_webDes_template.scss */
+.webDes .howTo a {
+  color: #806933;
+}
+/* line 32, ../scss/_webDes_template.scss */
+.webDes .howTo a.excerpt-read-more {
+  font-weight: 700;
+}
+/* line 38, ../scss/_webDes_template.scss */
 .webDes .offCanvas {
   height: 60px;
   width: 100%;
@@ -819,7 +1068,7 @@ Web Design Page CSS
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-/* line 31, ../scss/_webDes_template.scss */
+/* line 49, ../scss/_webDes_template.scss */
 .webDes .offCanvas .title {
   display: inline-block;
   float: none;
@@ -828,15 +1077,15 @@ Web Design Page CSS
   font-weight: 700;
   margin: 0 auto;
 }
-/* line 38, ../scss/_webDes_template.scss */
+/* line 56, ../scss/_webDes_template.scss */
 .webDes .offCanvas .title a {
   color: #d9b257;
 }
-/* line 42, ../scss/_webDes_template.scss */
+/* line 60, ../scss/_webDes_template.scss */
 .webDes .offCanvas .menuBtn span {
   background: #d9b257;
 }
-/* line 47, ../scss/_webDes_template.scss */
+/* line 65, ../scss/_webDes_template.scss */
 .webDes .offCanvasMenu {
   width: 300px;
   min-height: 100%;
@@ -851,22 +1100,22 @@ Web Design Page CSS
   -webkit-transition: all, 0.4s;
   transition: all, 0.4s;
 }
-/* line 57, ../scss/_webDes_template.scss */
+/* line 75, ../scss/_webDes_template.scss */
 .webDes .offCanvasMenu .offTitle {
   padding: 15px 0;
 }
-/* line 59, ../scss/_webDes_template.scss */
+/* line 77, ../scss/_webDes_template.scss */
 .webDes .offCanvasMenu .offTitle .site-title {
   padding-top: 12px;
   color: #d9b257;
   font-size: 28px;
   font-weight: 700;
 }
-/* line 66, ../scss/_webDes_template.scss */
+/* line 84, ../scss/_webDes_template.scss */
 .webDes .offCanvasMenu .cb-logo:before {
   font-size: 60px;
 }
-/* line 69, ../scss/_webDes_template.scss */
+/* line 87, ../scss/_webDes_template.scss */
 .webDes .offCanvasMenu.open {
   left: 0;
   -moz-transition: all, 0.4s;
@@ -874,22 +1123,22 @@ Web Design Page CSS
   -webkit-transition: all, 0.4s;
   transition: all, 0.4s;
 }
-/* line 73, ../scss/_webDes_template.scss */
+/* line 91, ../scss/_webDes_template.scss */
 .webDes .offCanvasMenu #menu-main-menu {
   width: 100%;
 }
-/* line 75, ../scss/_webDes_template.scss */
+/* line 93, ../scss/_webDes_template.scss */
 .webDes .offCanvasMenu #menu-main-menu li {
   width: 100%;
   display: block;
 }
-/* line 78, ../scss/_webDes_template.scss */
+/* line 96, ../scss/_webDes_template.scss */
 .webDes .offCanvasMenu #menu-main-menu li a {
   color: #d9b257;
   font-size: 18px;
   font-weight: 700;
 }
-/* line 82, ../scss/_webDes_template.scss */
+/* line 100, ../scss/_webDes_template.scss */
 .webDes .offCanvasMenu #menu-main-menu li a:hover {
   color: #FFD166;
   -moz-transition: color, 1s;
@@ -897,7 +1146,7 @@ Web Design Page CSS
   -webkit-transition: color, 1s;
   transition: color, 1s;
 }
-/* line 91, ../scss/_webDes_template.scss */
+/* line 109, ../scss/_webDes_template.scss */
 .webDes .sideMenu {
   position: fixed;
   left: 0;
@@ -909,12 +1158,12 @@ Web Design Page CSS
   width: 150px;
   z-index: 999999999;
 }
-/* line 98, ../scss/_webDes_template.scss */
+/* line 116, ../scss/_webDes_template.scss */
 .webDes .sideMenu a {
   display: block;
   color: #806933;
 }
-/* line 104, ../scss/_webDes_template.scss */
+/* line 122, ../scss/_webDes_template.scss */
 .webDes .btnslide {
   width: 100%;
   background-color: #FFD166;
@@ -929,7 +1178,7 @@ Web Design Page CSS
   -webkit-transition: margin-left, 0.4s;
   transition: margin-left, 0.4s;
 }
-/* line 114, ../scss/_webDes_template.scss */
+/* line 132, ../scss/_webDes_template.scss */
 .webDes .btnslide:hover {
   margin-left: 0;
   -moz-transition: margin-left, 0.4s;
@@ -937,7 +1186,7 @@ Web Design Page CSS
   -webkit-transition: margin-left, 0.4s;
   transition: margin-left, 0.4s;
 }
-/* line 120, ../scss/_webDes_template.scss */
+/* line 138, ../scss/_webDes_template.scss */
 .webDes .srchBtn {
   width: 40px;
   height: 39px;
@@ -948,7 +1197,7 @@ Web Design Page CSS
   -webkit-background-size: 75%;
   background-size: 75%;
 }
-/* line 127, ../scss/_webDes_template.scss */
+/* line 145, ../scss/_webDes_template.scss */
 .webDes .mainNav {
   height: 60px;
   width: 100%;
@@ -963,51 +1212,55 @@ Web Design Page CSS
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-/* line 138, ../scss/_webDes_template.scss */
+/* line 156, ../scss/_webDes_template.scss */
 .webDes .mainNav a {
   color: #d9b257;
 }
-/* line 142, ../scss/_webDes_template.scss */
+/* line 160, ../scss/_webDes_template.scss */
 .webDes .mag-glass {
   border: 4px solid #d9b257;
 }
-/* line 145, ../scss/_webDes_template.scss */
+/* line 163, ../scss/_webDes_template.scss */
 .webDes .mag-glass::before,
 .webDes .mag-glass::after {
   background: #d9b257;
 }
-/* line 149, ../scss/_webDes_template.scss */
+/* line 167, ../scss/_webDes_template.scss */
 .webDes section {
   color: #806933;
 }
-/* line 151, ../scss/_webDes_template.scss */
+/* line 169, ../scss/_webDes_template.scss */
 .webDes section:nth-of-type(1) {
   background-color: #d9b257;
 }
-/* line 155, ../scss/_webDes_template.scss */
+/* line 173, ../scss/_webDes_template.scss */
 .webDes section:nth-of-type(2) {
   background-color: #FFD166;
 }
-/* line 159, ../scss/_webDes_template.scss */
+/* line 177, ../scss/_webDes_template.scss */
 .webDes section:nth-of-type(3) {
   background-color: #d9b257;
 }
-/* line 162, ../scss/_webDes_template.scss */
+/* line 180, ../scss/_webDes_template.scss */
 .webDes section a {
-  color: #333;
+  color: #806933;
 }
-/* line 166, ../scss/_webDes_template.scss */
+/* line 182, ../scss/_webDes_template.scss */
+.webDes section a.excerpt-read-more {
+  font-weight: 700;
+}
+/* line 187, ../scss/_webDes_template.scss */
 .webDes .cb-logo:before {
   content: "\e904";
   font-size: 30px;
   color: #d9b257;
 }
-/* line 172, ../scss/_webDes_template.scss */
+/* line 193, ../scss/_webDes_template.scss */
 .webDes ul#menu-main-menu-1 {
   display: inline-block;
   float: right;
 }
-/* line 176, ../scss/_webDes_template.scss */
+/* line 197, ../scss/_webDes_template.scss */
 .webDes ul#menu-main-menu-1 li a {
   color: #d9b257;
   font-size: 18px;
@@ -1017,7 +1270,7 @@ Web Design Page CSS
   -webkit-transition: color, 1s;
   transition: color, 1s;
 }
-/* line 181, ../scss/_webDes_template.scss */
+/* line 202, ../scss/_webDes_template.scss */
 .webDes ul#menu-main-menu-1 li a:hover {
   color: #FFD166;
   -moz-transition: color, 1s;
@@ -1025,26 +1278,91 @@ Web Design Page CSS
   -webkit-transition: color, 1s;
   transition: color, 1s;
 }
-/* line 189, ../scss/_webDes_template.scss */
+/* line 212, ../scss/_webDes_template.scss */
+.webDes a.viewAllBtn {
+  margin-right: 0.9375rem;
+  display: inline-block;
+  background-color: #b39247;
+  font-weight: 700;
+  color: white;
+  padding: 15px;
+  float: right;
+  margin-top: 20px;
+}
+/* line 224, ../scss/_webDes_template.scss */
 .webDes .footer {
   background-color: #FFD166;
   overflow: hidden;
 }
-/* line 193, ../scss/_webDes_template.scss */
+/* line 228, ../scss/_webDes_template.scss */
 .webDes .footer .copyright {
   color: #806933;
 }
-/* line 197, ../scss/_webDes_template.scss */
+/* line 234, ../scss/_webDes_template.scss */
+.webDes .sub.footer .footerCont input.buttonCont {
+  background-color: #806933;
+}
+/* line 103, ../scss/_mixins.scss */
+.webDes .sub.footer .footerCont input.placeholder {
+  color: #d9b257;
+}
+/* line 104, ../scss/_mixins.scss */
+.webDes .sub.footer .footerCont input:-moz-placeholder {
+  color: #d9b257;
+}
+/* line 105, ../scss/_mixins.scss */
+.webDes .sub.footer .footerCont input::-moz-placeholder {
+  color: #d9b257;
+}
+/* line 106, ../scss/_mixins.scss */
+.webDes .sub.footer .footerCont input:-ms-input-placeholder {
+  color: #d9b257;
+}
+/* line 107, ../scss/_mixins.scss */
+.webDes .sub.footer .footerCont input::-webkit-input-placeholder {
+  color: #d9b257;
+}
+/* line 241, ../scss/_webDes_template.scss */
+.webDes .sub.footer .footerCont input {
+  background-color: #806933;
+}
+/* line 244, ../scss/_webDes_template.scss */
+.webDes .sub.footer .footerCont textarea {
+  background-color: #806933;
+  color: white;
+}
+/* line 103, ../scss/_mixins.scss */
+.webDes .sub.footer .footerCont textarea.placeholder {
+  color: #d9b257;
+}
+/* line 104, ../scss/_mixins.scss */
+.webDes .sub.footer .footerCont textarea:-moz-placeholder {
+  color: #d9b257;
+}
+/* line 105, ../scss/_mixins.scss */
+.webDes .sub.footer .footerCont textarea::-moz-placeholder {
+  color: #d9b257;
+}
+/* line 106, ../scss/_mixins.scss */
+.webDes .sub.footer .footerCont textarea:-ms-input-placeholder {
+  color: #d9b257;
+}
+/* line 107, ../scss/_mixins.scss */
+.webDes .sub.footer .footerCont textarea::-webkit-input-placeholder {
+  color: #d9b257;
+}
+/* line 254, ../scss/_webDes_template.scss */
 .webDes .footer .footerCont h1 {
   line-height: 0;
   padding-bottom: 50px;
   text-align: center;
   color: #806933;
 }
-/* line 203, ../scss/_webDes_template.scss */
+/* line 260, ../scss/_webDes_template.scss */
 .webDes .footer .footerCont input {
   background-color: #d9b257;
   color: #444;
+  border: none;
 }
 /* line 103, ../scss/_mixins.scss */
 .webDes .footer .footerCont input.placeholder {
@@ -1066,15 +1384,16 @@ Web Design Page CSS
 .webDes .footer .footerCont input::-webkit-input-placeholder {
   color: #777777;
 }
-/* line 209, ../scss/_webDes_template.scss */
+/* line 267, ../scss/_webDes_template.scss */
 .webDes .footer .footerCont input.buttonCont {
   background-color: #d9b257;
   color: #FFD166;
 }
-/* line 214, ../scss/_webDes_template.scss */
+/* line 272, ../scss/_webDes_template.scss */
 .webDes .footer .footerCont textarea {
   background-color: #d9b257;
   color: #444;
+  border: none;
 }
 /* line 103, ../scss/_mixins.scss */
 .webDes .footer .footerCont textarea.placeholder {
@@ -1096,18 +1415,18 @@ Web Design Page CSS
 .webDes .footer .footerCont textarea::-webkit-input-placeholder {
   color: #777777;
 }
-/* line 222, ../scss/_webDes_template.scss */
+/* line 281, ../scss/_webDes_template.scss */
 .webDes .footer .footerCont .resources img {
   border: 5px solid #d9b257;
   -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-/* line 226, ../scss/_webDes_template.scss */
+/* line 285, ../scss/_webDes_template.scss */
 .webDes .footer .footerCont .resources h4 {
   padding-top: 10px;
   text-align: center;
-  color: #d9b257;
+  color: #806933;
 }
 
 /*###############################################################
@@ -1134,6 +1453,26 @@ Web Development Page CSS
   color: #05b688;
 }
 /* line 19, ../scss/_webDev_template.scss */
+.webDev h1 {
+  margin-bottom: 30px;
+}
+/* line 23, ../scss/_webDev_template.scss */
+.webDev .howTo {
+  height: auto;
+  background-color: #06D6A0;
+  color: #036b50;
+  overflow: hidden;
+  padding-top: 50px;
+}
+/* line 29, ../scss/_webDev_template.scss */
+.webDev .howTo a {
+  color: #036b50;
+}
+/* line 31, ../scss/_webDev_template.scss */
+.webDev .howTo a.excerpt-read-more {
+  font-weight: 700;
+}
+/* line 37, ../scss/_webDev_template.scss */
 .webDev .offCanvas {
   height: 60px;
   width: 100%;
@@ -1148,7 +1487,7 @@ Web Development Page CSS
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-/* line 30, ../scss/_webDev_template.scss */
+/* line 48, ../scss/_webDev_template.scss */
 .webDev .offCanvas .title {
   display: inline-block;
   float: none;
@@ -1157,15 +1496,26 @@ Web Development Page CSS
   font-weight: 700;
   margin: 0 auto;
 }
-/* line 37, ../scss/_webDev_template.scss */
+/* line 55, ../scss/_webDev_template.scss */
 .webDev .offCanvas .title a {
   color: #05b688;
 }
-/* line 41, ../scss/_webDev_template.scss */
+/* line 59, ../scss/_webDev_template.scss */
 .webDev .offCanvas .menuBtn span {
   background: #05b688;
 }
-/* line 45, ../scss/_webDev_template.scss */
+/* line 65, ../scss/_webDev_template.scss */
+.webDev a.viewAllBtn {
+  margin-right: 0.9375rem;
+  display: inline-block;
+  background-color: #049670;
+  font-weight: 700;
+  color: white;
+  padding: 15px;
+  float: right;
+  margin-top: 20px;
+}
+/* line 77, ../scss/_webDev_template.scss */
 .webDev .offCanvasMenu {
   width: 300px;
   min-height: 100%;
@@ -1180,22 +1530,22 @@ Web Development Page CSS
   -webkit-transition: all, 0.4s;
   transition: all, 0.4s;
 }
-/* line 55, ../scss/_webDev_template.scss */
+/* line 87, ../scss/_webDev_template.scss */
 .webDev .offCanvasMenu .offTitle {
   padding: 15px 0;
 }
-/* line 57, ../scss/_webDev_template.scss */
+/* line 89, ../scss/_webDev_template.scss */
 .webDev .offCanvasMenu .offTitle .site-title {
   padding-top: 12px;
   color: #05b688;
   font-size: 28px;
   font-weight: 700;
 }
-/* line 64, ../scss/_webDev_template.scss */
+/* line 96, ../scss/_webDev_template.scss */
 .webDev .offCanvasMenu .cb-logo:before {
   font-size: 60px;
 }
-/* line 67, ../scss/_webDev_template.scss */
+/* line 99, ../scss/_webDev_template.scss */
 .webDev .offCanvasMenu.open {
   left: 0;
   -moz-transition: all, 0.4s;
@@ -1203,22 +1553,22 @@ Web Development Page CSS
   -webkit-transition: all, 0.4s;
   transition: all, 0.4s;
 }
-/* line 71, ../scss/_webDev_template.scss */
+/* line 103, ../scss/_webDev_template.scss */
 .webDev .offCanvasMenu #menu-main-menu {
   width: 100%;
 }
-/* line 73, ../scss/_webDev_template.scss */
+/* line 105, ../scss/_webDev_template.scss */
 .webDev .offCanvasMenu #menu-main-menu li {
   width: 100%;
   display: block;
 }
-/* line 76, ../scss/_webDev_template.scss */
+/* line 108, ../scss/_webDev_template.scss */
 .webDev .offCanvasMenu #menu-main-menu li a {
   color: #05b688;
   font-size: 18px;
   font-weight: 700;
 }
-/* line 80, ../scss/_webDev_template.scss */
+/* line 112, ../scss/_webDev_template.scss */
 .webDev .offCanvasMenu #menu-main-menu li a:hover {
   color: #06D6A0;
   -moz-transition: color, 1s;
@@ -1226,24 +1576,11 @@ Web Development Page CSS
   -webkit-transition: color, 1s;
   transition: color, 1s;
 }
-/* line 89, ../scss/_webDev_template.scss */
+/* line 121, ../scss/_webDev_template.scss */
 .webDev .sideMenu {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 150px;
-  z-index: 999999999;
+  display: none;
 }
-/* line 96, ../scss/_webDev_template.scss */
-.webDev .sideMenu a {
-  display: block;
-  color: #036b50;
-}
-/* line 102, ../scss/_webDev_template.scss */
+/* line 125, ../scss/_webDev_template.scss */
 .webDev .btnslide {
   width: 100%;
   background-color: #06D6A0;
@@ -1258,7 +1595,7 @@ Web Development Page CSS
   -webkit-transition: margin-left, 0.4s;
   transition: margin-left, 0.4s;
 }
-/* line 112, ../scss/_webDev_template.scss */
+/* line 135, ../scss/_webDev_template.scss */
 .webDev .btnslide:hover {
   margin-left: 0;
   -moz-transition: margin-left, 0.4s;
@@ -1266,7 +1603,7 @@ Web Development Page CSS
   -webkit-transition: margin-left, 0.4s;
   transition: margin-left, 0.4s;
 }
-/* line 118, ../scss/_webDev_template.scss */
+/* line 141, ../scss/_webDev_template.scss */
 .webDev .srchBtn {
   width: 40px;
   height: 39px;
@@ -1277,7 +1614,7 @@ Web Development Page CSS
   -webkit-background-size: 75%;
   background-size: 75%;
 }
-/* line 126, ../scss/_webDev_template.scss */
+/* line 149, ../scss/_webDev_template.scss */
 .webDev .mainNav {
   height: 60px;
   width: 100%;
@@ -1292,51 +1629,55 @@ Web Development Page CSS
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-/* line 137, ../scss/_webDev_template.scss */
+/* line 160, ../scss/_webDev_template.scss */
 .webDev .mainNav a {
   color: #05b688;
 }
-/* line 142, ../scss/_webDev_template.scss */
+/* line 165, ../scss/_webDev_template.scss */
 .webDev .mag-glass {
   border: 4px solid #05b688;
 }
-/* line 146, ../scss/_webDev_template.scss */
+/* line 169, ../scss/_webDev_template.scss */
 .webDev .mag-glass::before,
 .webDev .mag-glass::after {
   background: #05b688;
 }
-/* line 151, ../scss/_webDev_template.scss */
+/* line 174, ../scss/_webDev_template.scss */
 .webDev section {
   color: #036b50;
 }
-/* line 153, ../scss/_webDev_template.scss */
+/* line 176, ../scss/_webDev_template.scss */
 .webDev section:nth-of-type(1) {
   background-color: #05b688;
 }
-/* line 157, ../scss/_webDev_template.scss */
+/* line 180, ../scss/_webDev_template.scss */
 .webDev section:nth-of-type(2) {
   background-color: #06D6A0;
 }
-/* line 161, ../scss/_webDev_template.scss */
+/* line 184, ../scss/_webDev_template.scss */
 .webDev section:nth-of-type(3) {
   background-color: #05b688;
 }
-/* line 164, ../scss/_webDev_template.scss */
+/* line 187, ../scss/_webDev_template.scss */
 .webDev section a {
-  color: #333;
+  color: #036b50;
 }
-/* line 169, ../scss/_webDev_template.scss */
+/* line 189, ../scss/_webDev_template.scss */
+.webDev section a.excerpt-read-more {
+  font-weight: 700;
+}
+/* line 195, ../scss/_webDev_template.scss */
 .webDev .cb-logo:before {
   content: "\e904";
   font-size: 30px;
   color: #05b688;
 }
-/* line 176, ../scss/_webDev_template.scss */
+/* line 202, ../scss/_webDev_template.scss */
 .webDev ul#menu-main-menu-1 {
   display: inline-block;
   float: right;
 }
-/* line 180, ../scss/_webDev_template.scss */
+/* line 206, ../scss/_webDev_template.scss */
 .webDev ul#menu-main-menu-1 li a {
   color: #05b688;
   font-size: 18px;
@@ -1346,7 +1687,7 @@ Web Development Page CSS
   -webkit-transition: color, 1s;
   transition: color, 1s;
 }
-/* line 185, ../scss/_webDev_template.scss */
+/* line 211, ../scss/_webDev_template.scss */
 .webDev ul#menu-main-menu-1 li a:hover {
   color: #06D6A0;
   -moz-transition: color, 1s;
@@ -1354,26 +1695,80 @@ Web Development Page CSS
   -webkit-transition: color, 1s;
   transition: color, 1s;
 }
-/* line 194, ../scss/_webDev_template.scss */
+/* line 220, ../scss/_webDev_template.scss */
 .webDev .footer {
   background-color: #06D6A0;
   overflow: hidden;
 }
-/* line 198, ../scss/_webDev_template.scss */
+/* line 224, ../scss/_webDev_template.scss */
 .webDev .footer .copyright {
   color: #036b50;
 }
-/* line 202, ../scss/_webDev_template.scss */
+/* line 230, ../scss/_webDev_template.scss */
+.webDev .sub.footer .footerCont input.buttonCont {
+  background-color: #036b50;
+}
+/* line 103, ../scss/_mixins.scss */
+.webDev .sub.footer .footerCont input.placeholder {
+  color: #05b688;
+}
+/* line 104, ../scss/_mixins.scss */
+.webDev .sub.footer .footerCont input:-moz-placeholder {
+  color: #05b688;
+}
+/* line 105, ../scss/_mixins.scss */
+.webDev .sub.footer .footerCont input::-moz-placeholder {
+  color: #05b688;
+}
+/* line 106, ../scss/_mixins.scss */
+.webDev .sub.footer .footerCont input:-ms-input-placeholder {
+  color: #05b688;
+}
+/* line 107, ../scss/_mixins.scss */
+.webDev .sub.footer .footerCont input::-webkit-input-placeholder {
+  color: #05b688;
+}
+/* line 237, ../scss/_webDev_template.scss */
+.webDev .sub.footer .footerCont input {
+  background-color: #036b50;
+}
+/* line 240, ../scss/_webDev_template.scss */
+.webDev .sub.footer .footerCont textarea {
+  background-color: #036b50;
+  color: white;
+}
+/* line 103, ../scss/_mixins.scss */
+.webDev .sub.footer .footerCont textarea.placeholder {
+  color: #05b688;
+}
+/* line 104, ../scss/_mixins.scss */
+.webDev .sub.footer .footerCont textarea:-moz-placeholder {
+  color: #05b688;
+}
+/* line 105, ../scss/_mixins.scss */
+.webDev .sub.footer .footerCont textarea::-moz-placeholder {
+  color: #05b688;
+}
+/* line 106, ../scss/_mixins.scss */
+.webDev .sub.footer .footerCont textarea:-ms-input-placeholder {
+  color: #05b688;
+}
+/* line 107, ../scss/_mixins.scss */
+.webDev .sub.footer .footerCont textarea::-webkit-input-placeholder {
+  color: #05b688;
+}
+/* line 250, ../scss/_webDev_template.scss */
 .webDev .footer .footerCont h1 {
   line-height: 0;
   padding-bottom: 50px;
   text-align: center;
   color: #036b50;
 }
-/* line 208, ../scss/_webDev_template.scss */
+/* line 256, ../scss/_webDev_template.scss */
 .webDev .footer .footerCont input {
   background-color: #05b688;
   color: #444;
+  border: none;
 }
 /* line 103, ../scss/_mixins.scss */
 .webDev .footer .footerCont input.placeholder {
@@ -1395,15 +1790,16 @@ Web Development Page CSS
 .webDev .footer .footerCont input::-webkit-input-placeholder {
   color: #777777;
 }
-/* line 214, ../scss/_webDev_template.scss */
+/* line 263, ../scss/_webDev_template.scss */
 .webDev .footer .footerCont input.buttonCont {
   background-color: #05b688;
   color: #06D6A0;
 }
-/* line 219, ../scss/_webDev_template.scss */
+/* line 268, ../scss/_webDev_template.scss */
 .webDev .footer .footerCont textarea {
   background-color: #05b688;
   color: #444;
+  border: none;
 }
 /* line 103, ../scss/_mixins.scss */
 .webDev .footer .footerCont textarea.placeholder {
@@ -1425,20 +1821,40 @@ Web Development Page CSS
 .webDev .footer .footerCont textarea::-webkit-input-placeholder {
   color: #777777;
 }
-/* line 227, ../scss/_webDev_template.scss */
+/* line 277, ../scss/_webDev_template.scss */
 .webDev .footer .footerCont .resources img {
   border: 5px solid #05b688;
   -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-/* line 231, ../scss/_webDev_template.scss */
+/* line 281, ../scss/_webDev_template.scss */
 .webDev .footer .footerCont .resources h4 {
   padding-top: 10px;
   text-align: center;
-  color: #05b688;
+  color: #036b50;
 }
 
+@media only screen and (min-width: 40.063em) {
+  /* line 294, ../scss/_webDev_template.scss */
+  .webDev .sideMenu {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 150px;
+    z-index: 999999999;
+  }
+  /* line 302, ../scss/_webDev_template.scss */
+  .webDev .sideMenu a {
+    display: block;
+    color: #036b50;
+  }
+}
 /*###############################################################
 Web Development Page CSS
 ###############################################################*/
@@ -1462,7 +1878,22 @@ Web Development Page CSS
   font-size: 50px;
   color: #cb3c5e;
 }
-/* line 19, ../scss/_uxDes_template.scss */
+/* line 20, ../scss/_uxDes_template.scss */
+.uxDes h1 {
+  margin-bottom: 30px;
+}
+/* line 25, ../scss/_uxDes_template.scss */
+.uxDes a.viewAllBtn {
+  margin-right: 0.9375rem;
+  display: inline-block;
+  background-color: #a7324e;
+  font-weight: 700;
+  color: white;
+  padding: 15px;
+  float: right;
+  margin-top: 20px;
+}
+/* line 37, ../scss/_uxDes_template.scss */
 .uxDes .offCanvas {
   height: 60px;
   width: 100%;
@@ -1477,7 +1908,7 @@ Web Development Page CSS
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-/* line 30, ../scss/_uxDes_template.scss */
+/* line 48, ../scss/_uxDes_template.scss */
 .uxDes .offCanvas .title {
   display: inline-block;
   float: none;
@@ -1486,15 +1917,15 @@ Web Development Page CSS
   font-weight: 700;
   margin: 0 auto;
 }
-/* line 37, ../scss/_uxDes_template.scss */
+/* line 55, ../scss/_uxDes_template.scss */
 .uxDes .offCanvas .title a {
   color: #cb3c5e;
 }
-/* line 41, ../scss/_uxDes_template.scss */
+/* line 59, ../scss/_uxDes_template.scss */
 .uxDes .offCanvas .menuBtn span {
   background: #cb3c5e;
 }
-/* line 45, ../scss/_uxDes_template.scss */
+/* line 63, ../scss/_uxDes_template.scss */
 .uxDes .offCanvasMenu {
   width: 300px;
   min-height: 100%;
@@ -1509,22 +1940,22 @@ Web Development Page CSS
   -webkit-transition: all, 0.4s;
   transition: all, 0.4s;
 }
-/* line 55, ../scss/_uxDes_template.scss */
+/* line 73, ../scss/_uxDes_template.scss */
 .uxDes .offCanvasMenu .offTitle {
   padding: 15px 0;
 }
-/* line 57, ../scss/_uxDes_template.scss */
+/* line 75, ../scss/_uxDes_template.scss */
 .uxDes .offCanvasMenu .offTitle .site-title {
   padding-top: 12px;
   color: #cb3c5e;
   font-size: 28px;
   font-weight: 700;
 }
-/* line 64, ../scss/_uxDes_template.scss */
+/* line 82, ../scss/_uxDes_template.scss */
 .uxDes .offCanvasMenu .cb-logo:before {
   font-size: 60px;
 }
-/* line 67, ../scss/_uxDes_template.scss */
+/* line 85, ../scss/_uxDes_template.scss */
 .uxDes .offCanvasMenu.open {
   left: 0;
   -moz-transition: all, 0.4s;
@@ -1532,22 +1963,22 @@ Web Development Page CSS
   -webkit-transition: all, 0.4s;
   transition: all, 0.4s;
 }
-/* line 71, ../scss/_uxDes_template.scss */
+/* line 89, ../scss/_uxDes_template.scss */
 .uxDes .offCanvasMenu #menu-main-menu {
   width: 100%;
 }
-/* line 73, ../scss/_uxDes_template.scss */
+/* line 91, ../scss/_uxDes_template.scss */
 .uxDes .offCanvasMenu #menu-main-menu li {
   width: 100%;
   display: block;
 }
-/* line 76, ../scss/_uxDes_template.scss */
+/* line 94, ../scss/_uxDes_template.scss */
 .uxDes .offCanvasMenu #menu-main-menu li a {
   color: #cb3c5e;
   font-size: 18px;
   font-weight: 700;
 }
-/* line 80, ../scss/_uxDes_template.scss */
+/* line 98, ../scss/_uxDes_template.scss */
 .uxDes .offCanvasMenu #menu-main-menu li a:hover {
   color: #EF476F;
   -moz-transition: color, 1s;
@@ -1555,7 +1986,7 @@ Web Development Page CSS
   -webkit-transition: color, 1s;
   transition: color, 1s;
 }
-/* line 89, ../scss/_uxDes_template.scss */
+/* line 107, ../scss/_uxDes_template.scss */
 .uxDes .sideMenu {
   position: fixed;
   left: 0;
@@ -1567,12 +1998,12 @@ Web Development Page CSS
   width: 150px;
   z-index: 999999999;
 }
-/* line 96, ../scss/_uxDes_template.scss */
+/* line 114, ../scss/_uxDes_template.scss */
 .uxDes .sideMenu a {
   display: block;
   color: #782438;
 }
-/* line 102, ../scss/_uxDes_template.scss */
+/* line 120, ../scss/_uxDes_template.scss */
 .uxDes .btnslide {
   width: 100%;
   background-color: #EF476F;
@@ -1587,7 +2018,7 @@ Web Development Page CSS
   -webkit-transition: margin-left, 0.4s;
   transition: margin-left, 0.4s;
 }
-/* line 112, ../scss/_uxDes_template.scss */
+/* line 130, ../scss/_uxDes_template.scss */
 .uxDes .btnslide:hover {
   margin-left: 0;
   -moz-transition: margin-left, 0.4s;
@@ -1595,7 +2026,7 @@ Web Development Page CSS
   -webkit-transition: margin-left, 0.4s;
   transition: margin-left, 0.4s;
 }
-/* line 118, ../scss/_uxDes_template.scss */
+/* line 136, ../scss/_uxDes_template.scss */
 .uxDes .srchBtn {
   width: 40px;
   height: 39px;
@@ -1606,7 +2037,7 @@ Web Development Page CSS
   -webkit-background-size: 75%;
   background-size: 75%;
 }
-/* line 126, ../scss/_uxDes_template.scss */
+/* line 144, ../scss/_uxDes_template.scss */
 .uxDes .mainNav {
   height: 60px;
   width: 100%;
@@ -1621,51 +2052,75 @@ Web Development Page CSS
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-/* line 137, ../scss/_uxDes_template.scss */
+/* line 155, ../scss/_uxDes_template.scss */
 .uxDes .mainNav a {
   color: #cb3c5e;
 }
-/* line 142, ../scss/_uxDes_template.scss */
+/* line 160, ../scss/_uxDes_template.scss */
 .uxDes .mag-glass {
   border: 4px solid #cb3c5e;
 }
-/* line 146, ../scss/_uxDes_template.scss */
+/* line 164, ../scss/_uxDes_template.scss */
 .uxDes .mag-glass::before,
 .uxDes .mag-glass::after {
   background: #cb3c5e;
 }
-/* line 151, ../scss/_uxDes_template.scss */
+/* line 169, ../scss/_uxDes_template.scss */
 .uxDes section {
   color: #782438;
 }
-/* line 153, ../scss/_uxDes_template.scss */
+/* line 171, ../scss/_uxDes_template.scss */
 .uxDes section:nth-of-type(1) {
   background-color: #cb3c5e;
 }
-/* line 157, ../scss/_uxDes_template.scss */
+/* line 175, ../scss/_uxDes_template.scss */
 .uxDes section:nth-of-type(2) {
   background-color: #EF476F;
 }
-/* line 161, ../scss/_uxDes_template.scss */
+/* line 179, ../scss/_uxDes_template.scss */
 .uxDes section:nth-of-type(3) {
   background-color: #cb3c5e;
 }
-/* line 164, ../scss/_uxDes_template.scss */
+/* line 182, ../scss/_uxDes_template.scss */
 .uxDes section a {
-  color: #333;
+  color: #782438;
 }
-/* line 169, ../scss/_uxDes_template.scss */
+/* line 184, ../scss/_uxDes_template.scss */
+.uxDes section a.excerpt-read-more {
+  font-weight: 700;
+}
+/* line 190, ../scss/_uxDes_template.scss */
+.uxDes .howTo {
+  height: auto;
+  background-color: #EF476F;
+  color: #782438;
+  overflow: hidden;
+  padding-top: 50px;
+}
+/* line 196, ../scss/_uxDes_template.scss */
+.uxDes .howTo a {
+  color: #782438;
+}
+/* line 198, ../scss/_uxDes_template.scss */
+.uxDes .howTo a.excerpt-read-more {
+  font-weight: 700;
+}
+/* line 201, ../scss/_uxDes_template.scss */
+.uxDes .howTo a.viewAllBtn {
+  color: white;
+}
+/* line 207, ../scss/_uxDes_template.scss */
 .uxDes .cb-logo:before {
   content: "\e904";
   font-size: 30px;
   color: #cb3c5e;
 }
-/* line 176, ../scss/_uxDes_template.scss */
+/* line 214, ../scss/_uxDes_template.scss */
 .uxDes ul#menu-main-menu-1 {
   display: inline-block;
   float: right;
 }
-/* line 180, ../scss/_uxDes_template.scss */
+/* line 218, ../scss/_uxDes_template.scss */
 .uxDes ul#menu-main-menu-1 li a {
   color: #cb3c5e;
   font-size: 18px;
@@ -1675,7 +2130,7 @@ Web Development Page CSS
   -webkit-transition: color, 1s;
   transition: color, 1s;
 }
-/* line 185, ../scss/_uxDes_template.scss */
+/* line 223, ../scss/_uxDes_template.scss */
 .uxDes ul#menu-main-menu-1 li a:hover {
   color: #EF476F;
   -moz-transition: color, 1s;
@@ -1683,92 +2138,147 @@ Web Development Page CSS
   -webkit-transition: color, 1s;
   transition: color, 1s;
 }
-/* line 194, ../scss/_uxDes_template.scss */
+/* line 232, ../scss/_uxDes_template.scss */
 .uxDes .footer {
   background-color: #EF476F;
   overflow: hidden;
 }
-/* line 198, ../scss/_uxDes_template.scss */
+/* line 236, ../scss/_uxDes_template.scss */
 .uxDes .footer .copyright {
   color: #782438;
 }
-/* line 202, ../scss/_uxDes_template.scss */
+/* line 242, ../scss/_uxDes_template.scss */
+.uxDes .sub.footer .footerCont input.buttonCont {
+  background-color: #782438;
+}
+/* line 103, ../scss/_mixins.scss */
+.uxDes .sub.footer .footerCont input.placeholder {
+  color: #cb3c5e;
+}
+/* line 104, ../scss/_mixins.scss */
+.uxDes .sub.footer .footerCont input:-moz-placeholder {
+  color: #cb3c5e;
+}
+/* line 105, ../scss/_mixins.scss */
+.uxDes .sub.footer .footerCont input::-moz-placeholder {
+  color: #cb3c5e;
+}
+/* line 106, ../scss/_mixins.scss */
+.uxDes .sub.footer .footerCont input:-ms-input-placeholder {
+  color: #cb3c5e;
+}
+/* line 107, ../scss/_mixins.scss */
+.uxDes .sub.footer .footerCont input::-webkit-input-placeholder {
+  color: #cb3c5e;
+}
+/* line 249, ../scss/_uxDes_template.scss */
+.uxDes .sub.footer .footerCont input {
+  background-color: #782438;
+}
+/* line 252, ../scss/_uxDes_template.scss */
+.uxDes .sub.footer .footerCont textarea {
+  background-color: #782438;
+  color: white;
+}
+/* line 103, ../scss/_mixins.scss */
+.uxDes .sub.footer .footerCont textarea.placeholder {
+  color: #cb3c5e;
+}
+/* line 104, ../scss/_mixins.scss */
+.uxDes .sub.footer .footerCont textarea:-moz-placeholder {
+  color: #cb3c5e;
+}
+/* line 105, ../scss/_mixins.scss */
+.uxDes .sub.footer .footerCont textarea::-moz-placeholder {
+  color: #cb3c5e;
+}
+/* line 106, ../scss/_mixins.scss */
+.uxDes .sub.footer .footerCont textarea:-ms-input-placeholder {
+  color: #cb3c5e;
+}
+/* line 107, ../scss/_mixins.scss */
+.uxDes .sub.footer .footerCont textarea::-webkit-input-placeholder {
+  color: #cb3c5e;
+}
+/* line 262, ../scss/_uxDes_template.scss */
 .uxDes .footer .footerCont h1 {
   line-height: 0;
   padding-bottom: 50px;
   text-align: center;
   color: #782438;
 }
-/* line 208, ../scss/_uxDes_template.scss */
+/* line 268, ../scss/_uxDes_template.scss */
 .uxDes .footer .footerCont input {
   background-color: #cb3c5e;
-  color: #444;
+  color: white;
+  border: none;
 }
 /* line 103, ../scss/_mixins.scss */
 .uxDes .footer .footerCont input.placeholder {
-  color: #777777;
+  color: white;
 }
 /* line 104, ../scss/_mixins.scss */
 .uxDes .footer .footerCont input:-moz-placeholder {
-  color: #777777;
+  color: white;
 }
 /* line 105, ../scss/_mixins.scss */
 .uxDes .footer .footerCont input::-moz-placeholder {
-  color: #777777;
+  color: white;
 }
 /* line 106, ../scss/_mixins.scss */
 .uxDes .footer .footerCont input:-ms-input-placeholder {
-  color: #777777;
+  color: white;
 }
 /* line 107, ../scss/_mixins.scss */
 .uxDes .footer .footerCont input::-webkit-input-placeholder {
-  color: #777777;
+  color: white;
 }
-/* line 214, ../scss/_uxDes_template.scss */
+/* line 275, ../scss/_uxDes_template.scss */
 .uxDes .footer .footerCont input.buttonCont {
   background-color: #cb3c5e;
   color: #EF476F;
 }
-/* line 219, ../scss/_uxDes_template.scss */
+/* line 280, ../scss/_uxDes_template.scss */
 .uxDes .footer .footerCont textarea {
   background-color: #cb3c5e;
-  color: #444;
+  color: white;
+  border: none;
 }
 /* line 103, ../scss/_mixins.scss */
 .uxDes .footer .footerCont textarea.placeholder {
-  color: #777777;
+  color: white;
 }
 /* line 104, ../scss/_mixins.scss */
 .uxDes .footer .footerCont textarea:-moz-placeholder {
-  color: #777777;
+  color: white;
 }
 /* line 105, ../scss/_mixins.scss */
 .uxDes .footer .footerCont textarea::-moz-placeholder {
-  color: #777777;
+  color: white;
 }
 /* line 106, ../scss/_mixins.scss */
 .uxDes .footer .footerCont textarea:-ms-input-placeholder {
-  color: #777777;
+  color: white;
 }
 /* line 107, ../scss/_mixins.scss */
 .uxDes .footer .footerCont textarea::-webkit-input-placeholder {
-  color: #777777;
+  color: white;
 }
-/* line 227, ../scss/_uxDes_template.scss */
+/* line 289, ../scss/_uxDes_template.scss */
 .uxDes .footer .footerCont .resources img {
   border: 5px solid #cb3c5e;
   -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-/* line 231, ../scss/_uxDes_template.scss */
+/* line 293, ../scss/_uxDes_template.scss */
 .uxDes .footer .footerCont .resources h4 {
   padding-top: 10px;
   text-align: center;
-  color: #cb3c5e;
+  color: #782438;
 }
 
-/* line 395, ../scss/custom.scss */
+/* line 588, ../scss/custom.scss */
 .firefly {
   position: absolute;
   top: 0;
@@ -1779,25 +2289,35 @@ Web Development Page CSS
   z-index: 99999999999999999;
 }
 
-/* line 405, ../scss/custom.scss */
+/* line 598, ../scss/custom.scss */
 .categories {
-  height: 100%;
-  min-height: 100%;
+  height: auto;
+  min-height: auto;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
-/* line 408, ../scss/custom.scss */
+/* line 607, ../scss/custom.scss */
 .categories .subSec {
-  height: 100%;
-  min-height: 100%;
+  height: auto;
+  min-height: auto;
   position: relative;
 }
-/* line 413, ../scss/custom.scss */
+/* line 612, ../scss/custom.scss */
 .categories a {
   display: block;
-  min-height: 100%;
-  height: 100%;
+  min-height: auto;
+  height: auto;
   width: 33%;
+  padding: 75px 0;
 }
-/* line 418, ../scss/custom.scss */
+/* line 618, ../scss/custom.scss */
 .categories a:nth-of-type(1) {
   background-color: rgba(255, 209, 102, 0);
   -moz-transition: background-color, 1s;
@@ -1805,7 +2325,7 @@ Web Development Page CSS
   -webkit-transition: background-color, 1s;
   transition: background-color, 1s;
 }
-/* line 421, ../scss/custom.scss */
+/* line 621, ../scss/custom.scss */
 .categories a:nth-of-type(1):hover {
   background-color: #ffd166;
   -moz-transition: background-color, 1s;
@@ -1813,7 +2333,7 @@ Web Development Page CSS
   -webkit-transition: background-color, 1s;
   transition: background-color, 1s;
 }
-/* line 426, ../scss/custom.scss */
+/* line 626, ../scss/custom.scss */
 .categories a:nth-of-type(2) {
   background-color: rgba(6, 214, 160, 0);
   -moz-transition: background-color, 1s;
@@ -1821,7 +2341,7 @@ Web Development Page CSS
   -webkit-transition: background-color, 1s;
   transition: background-color, 1s;
 }
-/* line 429, ../scss/custom.scss */
+/* line 629, ../scss/custom.scss */
 .categories a:nth-of-type(2):hover {
   background-color: #06d6a0;
   -moz-transition: background-color, 1s;
@@ -1829,7 +2349,7 @@ Web Development Page CSS
   -webkit-transition: background-color, 1s;
   transition: background-color, 1s;
 }
-/* line 434, ../scss/custom.scss */
+/* line 634, ../scss/custom.scss */
 .categories a:nth-of-type(3) {
   background-color: rgba(239, 71, 111, 0);
   -moz-transition: background-color, 1s;
@@ -1837,7 +2357,7 @@ Web Development Page CSS
   -webkit-transition: background-color, 1s;
   transition: background-color, 1s;
 }
-/* line 437, ../scss/custom.scss */
+/* line 637, ../scss/custom.scss */
 .categories a:nth-of-type(3):hover {
   background-color: #ef476f;
   -moz-transition: background-color, 1s;
@@ -1845,25 +2365,25 @@ Web Development Page CSS
   -webkit-transition: background-color, 1s;
   transition: background-color, 1s;
 }
-/* line 445, ../scss/custom.scss */
+/* line 644, ../scss/custom.scss */
 .categories .column .catWrap {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
-/* line 453, ../scss/custom.scss */
+/* line 652, ../scss/custom.scss */
 .categories .column h2 {
   font-size: 40px;
   text-align: center;
   margin-top: 20px;
 }
-/* line 459, ../scss/custom.scss */
+/* line 658, ../scss/custom.scss */
 .categories .column:nth-of-type(1) h2 {
   color: #FFD166;
   -moz-transition: color, 0.4s;
@@ -1872,7 +2392,7 @@ Web Development Page CSS
   transition: color, 0.4s;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
-/* line 466, ../scss/custom.scss */
+/* line 665, ../scss/custom.scss */
 .categories .column:nth-of-type(2) h2 {
   color: #06D6A0;
   -moz-transition: color, 0.4s;
@@ -1881,7 +2401,7 @@ Web Development Page CSS
   transition: color, 0.4s;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
-/* line 473, ../scss/custom.scss */
+/* line 672, ../scss/custom.scss */
 .categories .column:nth-of-type(3) h2 {
   color: #EF476F;
   -moz-transition: color, 0.4s;
@@ -1891,15 +2411,20 @@ Web Development Page CSS
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 483, ../scss/custom.scss */
+/* line 681, ../scss/custom.scss */
+.mainWrap {
+  overflow: hidden;
+}
+
+/* line 686, ../scss/custom.scss */
 .howTo h1 {
   margin-bottom: 30px;
 }
-/* line 486, ../scss/custom.scss */
+/* line 689, ../scss/custom.scss */
 .howTo .contGrid {
   height: auto;
 }
-/* line 488, ../scss/custom.scss */
+/* line 691, ../scss/custom.scss */
 .howTo .contGrid a {
   display: block;
   min-height: 100%;
@@ -1912,7 +2437,7 @@ Web Development Page CSS
   -webkit-transition: background-color, 1s;
   transition: background-color, 1s;
 }
-/* line 496, ../scss/custom.scss */
+/* line 699, ../scss/custom.scss */
 .howTo .contGrid a:hover {
   background-color: #ffd166;
   -moz-transition: background-color, 1s;
@@ -1921,7 +2446,7 @@ Web Development Page CSS
   transition: background-color, 1s;
 }
 
-/* line 503, ../scss/custom.scss */
+/* line 706, ../scss/custom.scss */
 .cat-hover {
   color: #dadada !important;
   -moz-transition: color, 0.4s;
@@ -1929,7 +2454,7 @@ Web Development Page CSS
   -webkit-transition: color, 0.4s;
   transition: color, 0.4s;
 }
-/* line 506, ../scss/custom.scss */
+/* line 709, ../scss/custom.scss */
 .cat-hover:before {
   color: #dadada;
   -moz-transition: color, 0.4s;
@@ -1938,70 +2463,142 @@ Web Development Page CSS
   transition: color, 0.4s;
 }
 
-/* line 512, ../scss/custom.scss */
+/* line 715, ../scss/custom.scss */
 .copyright {
   color: #dadada;
 }
 
-/* line 516, ../scss/custom.scss */
+/* line 719, ../scss/custom.scss */
 .menu-item {
   display: inline-block;
   overflow: hidden;
 }
-/* line 519, ../scss/custom.scss */
+/* line 722, ../scss/custom.scss */
 .menu-item:before, .menu-item:after {
   right: 0;
   bottom: 0;
   background: #0883a4;
 }
-/* line 524, ../scss/custom.scss */
+/* line 727, ../scss/custom.scss */
 .menu-item:before {
   width: 100%;
   height: 2px;
   transform: translateX(-100%);
 }
-/* line 529, ../scss/custom.scss */
+/* line 732, ../scss/custom.scss */
 .menu-item:after {
   width: 2px;
   height: 100%;
   transform: translateY(100%);
 }
-/* line 534, ../scss/custom.scss */
+/* line 737, ../scss/custom.scss */
 .menu-item > a {
   display: block;
   padding: 10px;
 }
-/* line 537, ../scss/custom.scss */
+/* line 740, ../scss/custom.scss */
 .menu-item > a:before, .menu-item > a:after {
   left: 0;
   top: 0;
   background: #0883a4;
 }
-/* line 542, ../scss/custom.scss */
+/* line 745, ../scss/custom.scss */
 .menu-item > a:before {
   width: 100%;
   height: 2px;
   transform: translateX(100%);
 }
-/* line 547, ../scss/custom.scss */
+/* line 750, ../scss/custom.scss */
 .menu-item > a:after {
   width: 2px;
   height: 100%;
   transform: translateY(-100%);
 }
-/* line 553, ../scss/custom.scss */
+/* line 756, ../scss/custom.scss */
 .menu-item:hover:before, .menu-item:hover:after, .menu-item:hover > span:before, .menu-item:hover > span:after {
   transform: translate(0, 0);
+}
+
+/* line 763, ../scss/custom.scss */
+#content.singlePost #inner-content {
+  background-color: #dadada;
+  padding: 50px 0;
+  color: #8E44AD;
+}
+/* line 767, ../scss/custom.scss */
+#content.singlePost #inner-content h1, #content.singlePost #inner-content h2, #content.singlePost #inner-content h3, #content.singlePost #inner-content h4, #content.singlePost #inner-content h5, #content.singlePost #inner-content h6 {
+  color: #6b3382;
+}
+/* line 770, ../scss/custom.scss */
+#content.singlePost #inner-content a {
+  color: #6b3382;
+  text-decoration: underline;
+}
+/* line 774, ../scss/custom.scss */
+#content.singlePost #inner-content #metaDivider {
+  display: none;
+}
+/* line 780, ../scss/custom.scss */
+#content.singlePost #inner-content article {
+  margin: 75px 0;
+}
+/* line 782, ../scss/custom.scss */
+#content.singlePost #inner-content article h5 {
+  font-size: 30px;
+}
+/* line 787, ../scss/custom.scss */
+#content.singlePost .postThumb {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* line 794, ../scss/custom.scss */
+.article {
+  width: 100%;
+  float: left;
+  padding: 15px;
+  margin-bottom: 15px;
 }
 
 /*########################################################################
 Medium Screen Size
 ########################################################################*/
+@media only screen and (min-width: 40.063em) {
+  /* line 809, ../scss/custom.scss */
+  .tagline {
+    font-size: 55px;
+    z-index: 999;
+  }
+  /* line 812, ../scss/custom.scss */
+  .tagline p {
+    line-height: 1.2em;
+  }
+
+  /* line 817, ../scss/custom.scss */
+  .postContent {
+    font-size: 19px;
+  }
+
+  /* line 821, ../scss/custom.scss */
+  .article {
+    width: 50%;
+  }
+
+  /* line 825, ../scss/custom.scss */
+  .articleImg {
+    height: 225px;
+  }
+
+  /* line 829, ../scss/custom.scss */
+  .blockquote {
+    font-size: 19px;
+  }
+}
 /*########################################################################
 large Screen Size
 ########################################################################*/
 @media only screen and (min-width: 64.063em) {
-  /* line 573, ../scss/custom.scss */
+  /* line 842, ../scss/custom.scss */
   section {
     height: 100%;
     min-height: 100%;
@@ -2009,7 +2606,7 @@ large Screen Size
     background-color: #DADADA;
   }
 
-  /* line 580, ../scss/custom.scss */
+  /* line 849, ../scss/custom.scss */
   .secContent {
     position: absolute;
     top: 50%;
@@ -2022,11 +2619,44 @@ large Screen Size
     transform: translateY(-50%);
     width: 85%;
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
     padding: 0;
   }
+  /* line 860, ../scss/custom.scss */
+  .secContent .secMainContent {
+    overflow: hidden;
+  }
 
-  /* line 594, ../scss/custom.scss */
+  /* line 865, ../scss/custom.scss */
+  blockquote {
+    font-size: 22px;
+  }
+
+  /* line 869, ../scss/custom.scss */
+  .postContent {
+    font-size: 22px;
+  }
+
+  /* line 873, ../scss/custom.scss */
+  .article {
+    width: 33.333333333%;
+  }
+
+  /* line 877, ../scss/custom.scss */
+  .articleImg {
+    height: 300px;
+  }
+
+  /* line 881, ../scss/custom.scss */
+  .tagline {
+    font-size: 75px;
+  }
+  /* line 883, ../scss/custom.scss */
+  .tagline p {
+    line-height: 1.2em;
+  }
+
+  /* line 889, ../scss/custom.scss */
   .footer .footerCont {
     position: absolute;
     left: 0;
@@ -2040,34 +2670,74 @@ large Screen Size
     padding: 0;
   }
 
-  /* line 606, ../scss/custom.scss */
+  /* line 901, ../scss/custom.scss */
   ul#menu-main-menu-1 {
     padding-top: 10px;
+  }
+
+  /* line 906, ../scss/custom.scss */
+  .categories {
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  /* line 915, ../scss/custom.scss */
+  .categories .subSec {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+  }
+  /* line 920, ../scss/custom.scss */
+  .categories a {
+    display: block;
+    min-height: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  /* line 927, ../scss/custom.scss */
+  .categories .column .catWrap {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
 /*########################################################################
 Special Screen Size
 ########################################################################*/
 @media only screen and (min-width: 51.25em) {
-  /* line 616, ../scss/custom.scss */
+  /* line 943, ../scss/custom.scss */
   .mainNav {
     display: block;
   }
 
-  /* line 621, ../scss/custom.scss */
-  .webDes .mainNav, .webDev .mainNav, .uxDes .mainNav {
+  /* line 948, ../scss/custom.scss */
+  .webDes .mainNav, .webDev .mainNav, .uxDes .mainNav, .mainPage .mainNav, .singPost .mainNav {
     display: block;
   }
 
-  /* line 627, ../scss/custom.scss */
-  .webDes .offCanvas, .webDev .offCanvas, .uxDes .offCanvas {
+  /* line 954, ../scss/custom.scss */
+  .webDes .offCanvas, .webDev .offCanvas, .uxDes .offCanvas, .mainPage .offCanvas, .singPost .offCanvas {
     display: none;
   }
 }
 /*#######################################################################
 Animations
 #######################################################################*/
-/* line 639, ../scss/custom.scss */
+/* line 966, ../scss/custom.scss */
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -2113,7 +2783,7 @@ Animations
     transform: translate3d(0, 2000px, 0);
   }
 }
-/* line 687, ../scss/custom.scss */
+/* line 1014, ../scss/custom.scss */
 .bounceOutDown {
   -webkit-animation-name: bounceOutDown;
   animation-name: bounceOutDown;
@@ -2135,7 +2805,7 @@ Animations
     opacity: 1;
   }
 }
-/* line 710, ../scss/custom.scss */
+/* line 1037, ../scss/custom.scss */
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;

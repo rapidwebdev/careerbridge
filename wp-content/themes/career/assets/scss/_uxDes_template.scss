@@ -16,6 +16,24 @@
       color: $darRed;
     }
   }
+
+  h1{
+    margin-bottom: 30px
+  }
+
+  a{
+    &.viewAllBtn{
+    margin-right: 0.9375rem;
+    display: inline-block;
+    background-color: shade($red, 30%);
+    font-weight: 700;
+    color: white;
+    padding: 15px;
+    float: right;
+    margin-top: 20px;
+  }
+
+  }
   .offCanvas{
     height: 60px;
     width: 100%;
@@ -162,7 +180,27 @@
       background-color: $darRed;
     }
     a{
-      color: #333;
+      color: shade($red, 50%);
+      &.excerpt-read-more{
+        font-weight: 700;
+      }
+    }
+  }
+
+  .howTo{
+    height: auto;
+    background-color: $red;
+    color: shade($red, 50%);
+    overflow: hidden;
+    padding-top: 50px;
+    a{
+      color: shade($red, 50%);
+      &.excerpt-read-more{
+        font-weight: 700;
+      }
+      &.viewAllBtn{
+        color: white;
+      }
     }
   }
 
@@ -198,6 +236,28 @@
     .copyright{
       color: shade($red, 50%);
     }
+    &.sub{
+      .footerCont{
+        input{
+          &.buttonCont{
+            background-color: shade($red, 50%);
+          }
+          @include input-placeholder {
+            color: $darRed;
+          }
+        }
+        input {
+          background-color: shade($red, 50%);
+        }
+        textarea{
+          background-color: shade($red, 50%);
+          color: white;
+          @include input-placeholder {
+            color:$darRed;
+          }
+        }
+      }
+    }
     .footerCont{
       h1{
         line-height: 0;
@@ -207,9 +267,10 @@
       }
       input {
         background-color: $darRed;
-        color: #444;
+        color: white;
+        border: none;
         @include input-placeholder {
-          color:#777777;
+          color:white;
         }
         &.buttonCont{
           background-color: $darRed;
@@ -218,9 +279,10 @@
       }
       textarea{
         background-color: $darRed;
-        color: #444;
+        color: white;
+        border: none;
         @include input-placeholder {
-          color:#777777;
+          color:white;
         }
       }
       .resources{
@@ -231,9 +293,13 @@
         h4{
           padding-top: 10px;
           text-align: center;
-          color: $darRed;;
+          color: shade($red, 50%);
         }
       }
     }
   }
+}
+
+@media only screen and (min-width: 40.063em) {
+  
 }

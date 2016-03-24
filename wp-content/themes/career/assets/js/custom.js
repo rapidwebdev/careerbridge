@@ -48,22 +48,215 @@ jQuery(document).ready(function($) {
     $(this).toggleClass('active');
     $('.offCanvasMenu').toggleClass('open');
   });
+
+
+  // Set product displays to equal height
+
+  var maxHeight = -1;
+
+  // $('.article .articleHead').each(function() {
+  //  maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+  // });
+
+  // $('.article .articleHead').each(function() {
+  //  $(this).height(maxHeight);
+  // });
+
+  // $('.article2 .articleHead').each(function() {
+  //  maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+  // });
+
+  // $('.article2 .articleHead').each(function() {
+  //  $(this).height(maxHeight);
+  // });
+
+  // $('.article3 .articleHead').each(function() {
+  //  maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+  // });
+
+  // $('.article3 .articleHead').each(function() {
+  //  $(this).height(maxHeight);
+  // });
+
+  $('.mainWrap .article').each(function() {
+   maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+  });
+
+  $('.mainWrap .article').each(function() {
+   $(this).height(maxHeight);
+  });
   
 }); jQuery
 
-var lastScrollTop = 0, delta = 50;
-jQuery(window).scroll(function(event){
-   var st = jQuery(this).scrollTop();
+// window.addEventListener("orientationchange", function() {
+//   var maxHeight = -1;
 
-   if(Math.abs(lastScrollTop - st) <= delta)
-      return;
+//     $('#article #articleHead').each(function() {
+//      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+//     });
 
-   if (st > lastScrollTop){
-       // downscroll code
-      jQuery('.mainNav').animate({top: '-60px'}, 400);
-   } else {
-      // upscroll code
-      jQuery('.mainNav').animate({top: '0'}, 400);
-   }
-   lastScrollTop = st;
-}); 
+//     $('#article #articleHead').each(function() {
+//      $(this).height(maxHeight);
+//     });
+
+//     $('#article2 #articleHead').each(function() {
+//      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+//     });
+
+//     $('#article2 #articleHead').each(function() {
+//      $(this).height(maxHeight);
+//     });
+
+//     $('#article3 #articleHead').each(function() {
+//      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+//     });
+
+//     $('#article3 #articleHead').each(function() {
+//      $(this).height(maxHeight);
+//     });
+
+//     $('.mainWrap .article').each(function() {
+//      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+//     });
+
+//     $('.mainWrap .article').each(function() {
+//      $(this).height(maxHeight);
+//     });
+// }, false);
+
+// jQuery(window).on("orientationchange",function($){
+//     var maxHeight = -1;
+
+//     $('#article #articleHead').each(function() {
+//      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+//     });
+
+//     $('#article #articleHead').each(function() {
+//      $(this).height(maxHeight);
+//     });
+
+//     $('#article2 #articleHead').each(function() {
+//      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+//     });
+
+//     $('#article2 #articleHead').each(function() {
+//      $(this).height(maxHeight);
+//     });
+
+//     $('#article3 #articleHead').each(function() {
+//      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+//     });
+
+//     $('#article3 #articleHead').each(function() {
+//      $(this).height(maxHeight);
+//     });
+
+//     $('.mainWrap .article').each(function() {
+//      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+//     });
+
+//     $('.mainWrap .article').each(function() {
+//      $(this).height(maxHeight);
+//     });
+
+//     alert('orientationchange');
+
+//   }); jQuery
+
+jQuery(window).on("orientationchange",function(){
+
+  setTimeout(function () {
+
+   var maxHeight = -1;
+
+  // jQuery('.article .articleHead').each(function() {
+  //  maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height();
+  // });
+
+  // jQuery('.article .articleHead').each(function() {
+  //  jQuery(this).height(maxHeight);
+  // });
+
+  // jQuery('.article2 .articleHead').each(function() {
+  //  maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height();
+  // });
+
+  // jQuery('.article2 .articleHead').each(function() {
+  //  jQuery(this).height(maxHeight);
+  // });
+
+  // jQuery('.article3 .articleHead').each(function() {
+  //  maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height();
+  // });
+
+  // jQuery('.article3 .articleHead').each(function() {
+  //  jQuery(this).height(maxHeight);
+  // });
+
+  jQuery('.mainWrap .article').each(function() {
+   maxHeight = maxHeight > jQuery(this).height() ? maxHeight : jQuery(this).height();
+  });
+
+  jQuery('.mainWrap .article').each(function() {
+   jQuery(this).height(maxHeight);
+  });
+  
+  alert("The orientation has changed!");
+  
+  }, 2000);
+
+}); jQuery
+
+//   window.addEventListener("resize", function() {
+//     var maxHeight = -1;
+
+//     $('.article .articleHead').each(function() {
+//      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+//     });
+
+//     $('.article .articleHead').each(function() {
+//      $(this).height(maxHeight);
+//     });
+
+//     $('.article2 .articleHead').each(function() {
+//      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+//     });
+
+//     $('.article2 #articleHead').each(function() {
+//      $(this).height(maxHeight);
+//     });
+
+//     $('#article3 #articleHead').each(function() {
+//      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+//     });
+
+//     $('#article3 #articleHead').each(function() {
+//      $(this).height(maxHeight);
+//     });
+
+//     $('.mainWrap .article').each(function() {
+//      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+//     });
+
+//     $('.mainWrap .article').each(function() {
+//      $(this).height(maxHeight);
+//     });
+  
+// }, false);
+
+// var lastScrollTop = 0, delta = 50;
+// jQuery(window).scroll(function(event){
+//    var st = jQuery(this).scrollTop();
+
+//    if(Math.abs(lastScrollTop - st) <= delta)
+//       return;
+
+//    if (st > lastScrollTop){
+//        // downscroll code
+//       jQuery('.mainNav').animate({top: '-60px'}, 400);
+//    } else {
+//       // upscroll code
+//       jQuery('.mainNav').animate({top: '0'}, 400);
+//    }
+//    lastScrollTop = st;
+// }); 

@@ -15,7 +15,6 @@ Template Name: Home page
 						<div class="catWrap text-center">
 							<span class="<?php the_field('cat_class');?>"></span>
 							<h2><?php the_title(); ?></h2>
-							<!-- <div><?php the_field('cat_desc'); ?></div> -->
 						</div>
 					</div>
 				</a>

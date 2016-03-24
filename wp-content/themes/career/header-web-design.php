@@ -59,7 +59,7 @@
 			  </div>
 			</div>
 				<div class="title small-8 columns no-pad text-center">
-		 			<a href="<?php get_site_url();?>">
+		 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 		 					<div class="medium-12 site-title"><?php bloginfo('name'); ?></div>
 		 			</a>
 	 			</div>
@@ -70,7 +70,7 @@
 
 		<div class="mainNav show-for-medium">
 			<div class="title">
-	 			<a href="<?php get_site_url();?>">
+	 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 	 				<div class="medium-12">
 	 					<div class="medium-4 columns cb-logo"></div>
 	 					<div class="medium-8 columns site-title"><?php bloginfo('name'); ?></div>
@@ -84,9 +84,12 @@
 		</div>
 
 		<header class="webDesHeader dzsparallaxer auto-init use-loading" data-options='{ direction: "reverse", mode_scroll: "fromtop" }'  role="banner">
-		<div class="tagline">
-		 			<p>Web Design</p>
-		 		</div>
-		 	<div class="webDesHeadImg dzsparallaxer--target"></div>
+			<div class="tagline">
+		 		<p>Web Design</p>
+		 	</div>
+		 	<div class="webDesHeadImg dzsparallaxer--target">
+		 		<div id="firefly" class="firefly"></div>
+		 		<div class="overlay"></div>
+		 	</div>
       <div class="headinfo row"></div>
 		</header>

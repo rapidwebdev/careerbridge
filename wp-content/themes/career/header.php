@@ -36,7 +36,7 @@
 	
 	<!-- Uncomment this line if using the Off-Canvas Menu --> 
 		
-	<body <?php body_class(); ?>>
+	<body <?php body_class('mainPage'); ?>>
 		<!-- Search Form -->
 		<div class="searchForm large-3 medium-6 small-12 columns">
 			<?php get_search_form(); ?>
@@ -59,7 +59,7 @@
 			  </div>
 			</div>
 				<div class="title small-8 columns no-pad text-center">
-		 			<a href="<?php get_site_url();?>">
+		 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 		 					<div class="medium-12 site-title"><?php bloginfo('name'); ?></div>
 		 			</a>
 	 			</div>
@@ -70,7 +70,7 @@
 
 		<div class="mainNav show-for-medium">
 			<div class="title">
-	 			<a href="<?php get_site_url();?>">
+	 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 	 				<div class="medium-12">
 	 					<div class="medium-4 columns cb-logo"></div>
 	 					<div class="medium-8 columns site-title"><?php bloginfo('name'); ?></div>
@@ -89,6 +89,7 @@
 	 		</div>
 		 	<div class="headImg dzsparallaxer--target">
 		 		<div id="firefly" class="firefly"></div>
+		 		<div class="overlay"></div>
 		 	</div>
       <div class="headinfo row"></div>
 		</header>

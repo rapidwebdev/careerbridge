@@ -16,6 +16,24 @@
       color: $darYlw;
     }
   }
+
+  h1{
+    margin-bottom: 30px
+  }
+
+  .howTo{
+    height: auto;
+    background-color: $ylw;
+    color: shade($ylw, 50%);
+    overflow: hidden;
+    padding-top: 50px;
+    a{
+      color: shade($ylw, 50%);
+      &.excerpt-read-more{
+        font-weight: 700;
+      }
+    }
+  }
   
   .offCanvas{
     height: 60px;
@@ -160,7 +178,10 @@
       background-color: $darYlw;
     }
     a{
-      color: #333;
+      color: shade($ylw, 50%);
+      &.excerpt-read-more{
+        font-weight: 700;
+      }
     }
   }
   .cb-logo:before {
@@ -186,12 +207,48 @@
       }
     }
   }
+
+   a{
+    &.viewAllBtn{
+      margin-right: 0.9375rem;
+      display: inline-block;
+      background-color: shade($ylw, 30%);
+      font-weight: 700;
+      color: white;
+      padding: 15px;
+      float: right;
+      margin-top: 20px;
+    }
+  }
+  
   .footer{
     @extend .footer;
     background-color: $ylw;
     overflow: hidden;
     .copyright{
       color: shade($ylw, 50%);
+    }
+    &.sub{
+      .footerCont{
+        input{
+          &.buttonCont{
+            background-color: shade($ylw, 50%);
+          }
+          @include input-placeholder {
+            color: $darYlw;
+          }
+        }
+        input {
+          background-color: shade($ylw, 50%);
+        }
+        textarea{
+          background-color: shade($ylw, 50%);
+          color: white;
+          @include input-placeholder {
+            color:$darYlw;
+          }
+        }
+      }
     }
     .footerCont{
       h1{
@@ -203,6 +260,7 @@
       input {
         background-color: $darYlw;
         color: #444;
+        border: none;
         @include input-placeholder {
           color:#777777;
         }
@@ -214,6 +272,7 @@
       textarea{
         background-color: $darYlw;
         color: #444;
+        border: none;
         @include input-placeholder {
           color:#777777;
         }
@@ -226,9 +285,13 @@
         h4{
           padding-top: 10px;
           text-align: center;
-          color: $darYlw;;
+          color: shade($ylw, 50%);
         }
       }
     }
   }
+}
+
+@media only screen and (min-width: 40.063em) {
+  
 }
